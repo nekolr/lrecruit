@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.RecordDao">
+	<insert id="addOne" parameterType="edu.tsu.lulin.entity.Record">
+		<selectKey resultType="Long" order="BEFORE" keyProperty="recordid">
+			select SEQ_RECORD_ID.nextval from dual
+		</selectKey>
+		insert into record (recordid,cvid,entpid,jobid,sendtime,status) values(
+			#{recordid,jdbcType=NUMERIC},
+			#{cvid,jdbcType=NUMERIC},
+			#{entpid,jdbcType=NUMERIC},
+			#{jobid,jdbcType=NUMERIC},
+			#{sendtime,jdbcType=TIMESTAMP},
+			#{status,jdbcType=NUMERIC}
+		)
+	</insert>
+	<update id="updateOne" parameterType = "edu.tsu.lulin.entity.Record">
+		update record set
+		<trim suffixOverrides=",">
+			<if test="cvid!=null">
+				cvid = #{cvid,jdbcType=NUMERIC},
+			</if>
+			<if test="entpid!=null">		
+				entpid = #{entpid,jdbcType=NUMERIC},	
+			</if>
+			<if test="jobid!=null">
+				jobid = #{jobid,jdbcType=NUMERIC},
+			</if>
+			<if test="sendtime!=null">
+				sendtime = #{sendtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="status!=null">
+				status = #{status,jdbcType=NUMERIC},
+			</if>
+			<if test="changetime!=null">
+				changetime = #{changetime,jdbcType=TIMESTAMP}
+			</if>
+		</trim>
+		where recordid = #{recordid}
+	</update>
+	<select id="queryOne" parameterType="Long" resultType="edu.tsu.lulin.entity.Record">
+		select * from record where recordid = #{recordid}
+	</select>
+	<select id="queryListByCondition" resultType="edu.tsu.lulin.entity.Record">
+		select record.* from record inner join cv on record.cvid = cv.cvid
+		<where>
+			<if test="jobid!=-1">
+				record.jobid = #{jobid}
+			</if>
+			<if test="experience!=-1">
+				and cv.experience = #{experience}
+			</if>
+			<if test="edu!=-1">
+				and cv.topedu = #{edu}
+			</if>
+			<if test="status!=-1">
+				and record.status = #{status}
+			</if>
+			<if test="entpid!=-1">
+				and record.entpid = #{entpid}
+			</if>
+		</where>
+	</select>
+	<select id="queryCountByStatus" resultType="Integer">
+		select count(*) from record inner join cv on record.cvid = cv.cvid
+		<where>
+			<if test="jobid!=-1">
+				record.jobid = #{jobid}
+			</if>
+			<if test="experience!=-1">
+				and cv.experience = #{experience}
+			</if>
+			<if test="edu!=-1">
+				and cv.topedu = #{edu}
+			</if>
+			<if test="status!=-1">
+				and record.status = #{status}
+			</if>
+			<if test="entpid!=-1">
+				and record.entpid = #{entpid}
+			</if>
+		</where>
+	</select>
+	<select id="queryCountByStatusAndEntp" resultType="Integer">
+		select count(*) from record where status = #{status} and entpid = #{entpid}
+	</select>
+	<select id="queryOneByCondition" resultType="edu.tsu.lulin.entity.Record">
+		select temp.recordid,temp.cvid,temp.jobid,temp.entpid,temp.sendtime,temp.status from (select r.*,rownum from RECORD r where cvid = #{cvid} and jobid = #{jobid} and entpid = #{entpid} and rownum = 1 order by sendtime) temp
+	</select>
+	<select id="queryOneByCondition2" resultType="edu.tsu.lulin.entity.Record">
+		<if test="jobid!=null and sendtime!= null">
+			select temp.recordid,temp.cvid,temp.jobid,temp.entpid,temp.sendtime,temp.status from (select r.*,rownum from RECORD r where cvid = #{cvid} and jobid = #{jobid} and sendtime = #{sendtime} and rownum = 1 order by sendtime) temp
+		</if>
+		<if test="jobid==null or sendtime== null">
+			select temp.recordid,temp.cvid,temp.jobid,temp.entpid,temp.sendtime,temp.status from (select r.*,rownum from RECORD r where cvid = #{cvid} and jobid = #{jobid} and sendtime = #{sendtime} and rownum = 1 order by sendtime) temp			
+		</if>
+	</select>
+	<select id="queryListBycvid" resultType="edu.tsu.lulin.entity.Record">
+		select * from record where cvid = #{cvid} and status = #{status}
+	</select>
+</mapper>

@@ -1,0 +1,92 @@
+.selc-child {float:left;background: #FFF;margin-right: 10px;position: relative;}
+.selc-child span {width: 72px;height: 28px;border: 1px solid #c3c3c3;color: #666;position: relative;line-height: 28px;padding: 0 27px 0 9px;cursor: pointer;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.selc-child span i {position: absolute;right: 7px;top: 10px;}
+.selc-child ul {display: none;position: absolute;background: #FFF;width: 100%;border-bottom: 1px solid #C3C3C3;border-top: 1px solid #C3C3C3;margin-top: -1px;}
+.sSelectOn {z-index: 10;}
+.sSelectOn ul {display: block;}
+.selc-child ul li {border-left: 1px solid #C3C3C3;color:#666;border-right: 1px solid #C3C3C3;padding-left:10px;padding-right:10px;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;line-height: 28px;cursor: pointer;transition: padding-left .3s;-moz-transition: padding-left .3s;-webkit-transition: padding-left .3s;-o-transition: padding-left .3s;}
+.selc-child ul li:hover,.selc-child ul li.on {background: #F1F1F1;padding-left:12px;}
+
+/*瀵湱鐛ユ径姘遍獓婢舵岸锟藉鐖�*/
+#multLockWin {width:100%;height: 100%;position: fixed;background: transparent;top: 0;left: 0;}
+.popWinSelector {width:496px;position: absolute;z-index: 100;}
+.popWinSelector.thr {width:734px;}
+.popWinSelector .multSelectWin {min-height: 314px;border: 4px solid #dbdbdb;background: #fff;overflow: hidden;}
+
+.popWinSelector .upArrow {position: absolute;top: -12px;left: 20px;border-style: solid;border-width: 6px;border-color: transparent transparent #DBDBDB transparent;height: 0;width: 0;font-size: 0;_border-color: tomato tomato #ccc tomato;_filter: chroma(color=tomato);}
+
+.popWinSelector.inSelect {width:400px;}
+.popWinSelector.bolder {width: 540px;}
+/* .popWinSelector.inSelect.thr {width:574px;} */
+.popWinSelector.inSelect.thr {width:597px;}
+.popWinSelector.inSelect .multSelectWin {min-height: 314px;border: 1px solid #DDD;}
+.popWinSelector.bolder .multSelectWin {border: 3px solid #DBDBDB;}
+
+.jpTi {height: 37px;line-height: 37px;padding: 0 12px 0 17px;}
+.jpTi strong {color: #666;font-size: 18px;margin-right: 5px;}
+.jpTi span {color: #999;}
+.jpTi .closeGray {margin-top: 12px;}
+.jpNn {padding-left: 10px;}
+.jpNn:after {clear:both;content:'';display: block;}
+.jpNn div.fr {width: 400px;line-height: 34px;}
+.inSelect .jpNn div.fr {width: 284px;}
+.thr .jpNn div.fr {width: 638px;}
+.inSelect.thr .jpNn div.fr {width: 482px;}
+.jpNnTi {width: 72px;text-align: center;display: none;margin-top: 3px;line-height: 34px;}
+.jpNn span, .trip span {display: inline-block;vertical-align: middle;float: left;}
+
+.popWinSelector.inSelect .jpTi {display: none;}
+
+.jpList {border-top:1px solid #eee;text-align: left;}
+.jp-l1 {overflow-y: scroll;overflow-x: hidden;height: 232px;width: 170px;display:visible;}
+.jp-l1 .ant {background-color: #B9D5E7;color: #FFF;}
+.jp-l1 .ant strong {color: #FFF;}
+.jp-l1 li:not(.ant):hover {background-color: #EBF4F9;}
+.jp-l1 li {text-align: left;color: #666;width: 100%;cursor: pointer;line-height: 34px;}
+.jp-l1 li strong {display: inline-block;font: 14px/29px Arial;color: #999;width: 5%;text-align: center;vertical-align: middle;}
+.jp-l1 li span {display: inline-block;width:95%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;vertical-align: middle;text-indent: 2px;text-align: left;}
+.jp-l1 li.nm span {width:100%;text-align: left;text-indent: 20px;}
+.jp-l2,.jp-l3 {width: 375px;height: 232px;overflow-y: scroll;display:visible;}
+.jp-l3 {background: #f8f8f8;}
+.popWinSelector.thr .jp-l2,.popWinSelector.thr .jp-l3 {width: 306px;}
+.jp-l3 {border-left:1px solid #E8E8E8;display: none;}
+.jpcTi {display: inline-block;margin: 5px 0 5px 16px;height: 20px;padding: 0 5px;color: #666;font: 12px/20px simsun;cursor: pointer;}
+.jpcTi.ant,.jpcTi:hover {background-color: #465364;color:#FFF;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;}
+.jp-l2 li,.jp-l3 li {float: left;margin: 4px;font-size: 14px;line-height: 20px;height: 20px;padding: 2px 10px;cursor:pointer;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;transition: all .3s;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;}
+.jp-l2 li.ant,.jp-l2 li:hover,.jp-l3 li.ant,.jp-l3 li:hover {background: #465364;color: #fff;}
+
+.popWinSelector.inSelect .jp-l1 {height: 301px;}
+.popWinSelector.inSelect .jp-l2 {width: 228px;height: 301px;}
+/* .popWinSelector.inSelect .jp-l3 {width: 196px;height: 168px;} */
+.popWinSelector.inSelect .jp-l3{width: 196px;height: 301px;}
+
+
+.popWinSelector.inSelect.bolder .jp-l1 {height: 230px;}
+.popWinSelector.inSelect.bolder .jp-l2 {width: 421px;height: 230px;}
+.popWinSelector.inSelect.bolder .jp-l3 {width: 196px;height: 230px;}
+
+.jpSub {background: #f7f7f7;border-top: 1px solid #F8F8F8;text-align: center;padding: 10px 0;width: 100%;}
+.jpSub a {font-weight: bold;font-size: 14px;}
+
+.popWinSelector.inSelect .jpSub {padding:3px 0;}
+
+.pinkBut, .pinkBut:link,.pinkBut:visited {display: inline-block;background: #f85659;text-align: center;padding: 0 16px;color: #fff;border-radius: 1px;height: 28px;line-height: 28px;border: 1px solid #f85659;}
+
+.pinkBut:hover {background: #FFF;color: #f85659;}
+.grayLineBut, .grayLineBut:link, .grayLineBut:visited {display: inline-block;border: 1px solid #bababa;background-color: #fff;color: #666;padding: 0 15px;border-radius: 1px;height: 28px;line-height: 28px;margin-right: 10px;}
+.grayLineBut:hover {background: #bababa;color: #FFF;}
+
+.inSelect .pinkBut,.inSelect .grayLineBut {}
+.trip {white-space: nowrap;margin: 0 5px 0 0;padding-bottom: 4px;}
+.trip span {height: 21px;font: 12px/21px simsun;color: #7B929F;cursor: pointer;}
+.isLe {background: #EEF7FD;white-space: nowrap;padding: 0 7px 0 9px;}
+.isRi {background: #B9D5E7 url(../images/icon.gif) no-repeat 2px -396px;width: 17px;}
+.tooMuch {color:#FF0000;}
+.closeGray {display: inline-block;background: url(../images/jicon.png) no-repeat -1px -1px;width: 12px;height: 12px;overflow: hidden;cursor: pointer;position: absolute;right: 10px;top: 20px;}
+.fl {float:left;}
+.fr {float:right;}
+
+.jpSearch {padding: 5px 10px;}
+.jpSearch input {width: 270px;height: 38px;border: 1px solid #f5f5f5;background-color: #f5f5f5;line-height: 38px;padding: 0 20px;float:left;}
+.jpSearch input:focus {border-color:#ddd;}
+.jpSearch .jpErr {float: left;margin-left: 10px;height: 40px;line-height: 40px;}

@@ -1,0 +1,218 @@
+/*input*/
+.main{width:1024px; margin:0 auto; overflow: hidden;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#999}
+textarea:-moz-placeholder,input:-moz-placeholder{color:#999}
+textarea::-moz-placeholder,input::-moz-placeholder{color:#999}
+textarea:-ms-input-placeholder,input:-ms-input-placeholder{color:#999}
+input,select,textarea{margin:0; padding:0; background: none; border:none; display:inline-block;*display:inline; *zoom:1; font-size: 0; line-height: 0;vertical-align:top; font-size: 14px; height: 28px; line-height: 28px; background: #fff;}
+.main img{display: block;}
+
+/*通用样式*/
+.main .w1024{ min-height: 465px;}
+.main .ml135{ margin-left: 135px;}
+.main em.tag{ color:#ff0000; margin-right: 4px;}
+.main .til-jobPost{ display: inline-block; line-height: 36px; font-size: 20px; color:#777; font-weight: bold; padding:0 20px; background: #f8f8f8; margin-left: 60px;}
+.main .c-icon{ display: inline-block; background: url(../images/icon-jobPost.png) no-repeat; vertical-align: middle;}
+.main .c-icon.new-add{ width:21px; height: 21px; background-position: -244px -51px; margin-top: -2px; margin-right: 7px}
+.main .c-icon.choice{width:13px; height: 13px; background-position: 0 -62px; margin:-3px 5px 0 10px;}
+.main .c-icon.choiced{width:13px; height: 13px; background-position: -20px -62px; margin:-3px 5px 0 10px;}
+.main .c-icon.i-phone{width:42px; height: 44px; background-position: -223px -119px; margin:2px 11px 0 0;}
+/*.main .fox-icon{ display: inline-block; background: url(../img/fox.png) no-repeat; vertical-align: middle;}*/
+.main .fox-icon.smileFox{ width:115px; height: 93px; background-position: 0 0;}
+.main .c-icon.i-right{width:16px; height: 16px; background-position: -62px -60px; margin:-2px 4px 0 0;}
+.main .c-icon.i-sorry{width:16px; height: 16px; background-position: -85px -60px; margin:-2px 4px 0 0;}
+
+/*左侧样式*/
+.lf-posManage{ width:220px; float:left; margin-right: 16px; min-height: 375px; overflow: hidden;}
+.lf-posManage .new-posManage{ height: 50px; line-height: 50px; background: #f85659; color:#fff; font-size: 18px; font-weight: bold; border-radius: 2px; text-align: center;}
+.lf-posManage .new-posManage a{ display: block; color:#fff;}
+.lf-posManage ul{ width:220px; background: #fff; margin-top: 20px; overflow: hidden;}
+.lf-posManage li{ height: 46px; line-height: 46px; border-top:1px solid #eee; margin-top: -1px;}
+.lf-posManage li a{display: block; height: 46px; border-left:3px solid #fff; font-size: 16px; color:#666; padding-left: 37px;}
+.lf-posManage li a:hover,.lf-posManage li.on a{ background: #f4f4f4; border-left:3px solid #f85659; font-weight: bold; color:#f85659;}
+.lf-posManage .customPhone{ width:207px; height: 60px; padding-top: 12px; padding-left: 13px; border-radius: 3px; background: #fff; margin-top: 25px;}
+.lf-posManage .customPhone>div{ float:left; color:#999; line-height: 24px;*font-size: 13px;}
+
+/*右侧样式*/
+.rt-posManage{ width:788px; background: #fff; float:left; overflow: hidden;}
+.rt-posManage .til-posManage{ height: 50px; line-height: 50px; border-bottom:1px solid #eee; font-size: 18px; color:#777; font-weight: bold; padding-left: 24px;}
+.rt-posManage .til-posManage .search{ font-weight: normal; float:right; margin-top: 9px; margin-right: 10px; }
+.rt-posManage .til-posManage .search input{border:2px solid #f85659; font-size: 14px;}
+.rt-posManage .til-posManage .search input.txt{ width:334px; padding-left: 13px; float:left;}
+.rt-posManage .til-posManage .search input.btn{ width:74px; height: 32px; float:left; background: #f85659; font-size: 18px; color:#fff;}
+.rt-posManage .con-posManage{ min-height: 435px;}
+/*暂无记录*/
+.no-record{ margin-top: 95px; min-height: 400px; overflow: hidden;}
+.no-record .box-fox{ width: 305px; float:left; margin-right: 25px; text-align: right;}
+.no-record p{ text-align: left; line-height:36px; font-size: 18px; color:#aaa; padding-top: 7px;}
+.no-record a.btn-release{ display: inline-block; line-height: 36px; font-size: 16px; color:#fff; font-weight: bold; border-radius: 2px; background: #f85659; padding:0 30px; margin-top: 15px;}
+
+/*被审核的职位*/
+.item-audit{ height: 64px; line-height: 32px; padding:18px 0; border-top:1px solid #eee; margin-top: -1px; font-size: 14px; }
+.item-audit>div{padding-left: 25px; float:left; overflow: hidden;}
+.item-audit>div p{ height: 32px; overflow: hidden;}
+.item-audit .e1{ width:300px;}
+.item-audit .e2{ width:290px;}
+.item-audit .e3{ width:120px;}
+.item-audit .e1 p{ color:#666; height: 32px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
+.item-audit .e1 .name{ float:left;max-width: 185px; font-size: 16px; color:#0168b7; margin-right: 8px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.item-audit .e1 span{ color:#999; width:105px;}
+.item-audit .e2{ color:#999;}
+.item-audit .e2 p.msg{ color:#ff0000;}
+.item-audit .e2 p.msg span{ color:#666;}
+.item-audit .e3{ line-height: 64px; color:#999; text-align: center;}
+.item-audit .e3 a{ color:#0168b7;}
+
+/*草稿箱*/
+.item-draft .e2 p{ height: 64px; line-height: 64px;}
+.item-draft .e3 a{ margin:0 8px;}
+
+/*下线职位*/
+.item-offline{ height: 64px; line-height: 32px; padding:18px 0; border-top:1px solid #eee; margin-top: -1px; font-size: 14px; }
+.item-offline>div{ padding-left: 25px; float:left; overflow: hidden;}
+.item-offline .e1{ width:13px; line-height: 64px; /*display: none;批量更新隐藏时样式*/}
+.item-offline .e2{ width:250px; /*width:290px;.e1隐藏时样式*/}
+.item-offline .e3{ width:250px; /*width:260px;.e1隐藏时样式*/ font-size: 13px;}
+.item-offline .e4{ width:165px; /* line-height: 64px; */ font-size: 13px;}
+.item-offline .e1 i.c-icon.choice{ margin:0;}
+.item-offline .e2 p{width:250px; color:#666; height: 32px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.item-offline .e2 .name{ float:left;max-width: 160px;font-size: 16px; color:#0168b7; margin-right: 8px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.item-offline .e2 span{ color:#999;}
+.item-offline .e3{ color:#999;}
+.item-offline .e3 p.data{ color:#666; font-size: 13px; overflow: hidden;}
+.item-offline .e4 p{ line-height: 32px; color:#999; text-align: center;}
+.item-offline .e4 a{ color:#0168b7; padding:0 8px;}
+.item-offline .e4>div{ text-align: center;}
+
+/*全选*/
+.all{ height: 30px; line-height: 30px; padding:10px 0; overflow: hidden; border-top:1px solid #eee; /*display: none;批量更新隐藏时样式*/}
+.all .rt-all{float:right; margin-right: 14px; }
+.all .rt-all a{ display:inline-block;color:#fff; background: #f85659; padding:0 12px; border-radius: 2px; margin-left: 7px;}
+.all .all-choice{ padding-left: 25px;}
+.all .all-choice span{ cursor: pointer;}
+.all .all-choice i.c-icon.choice{ margin:0; margin-right: 11px; }
+
+/*显示中职位*/
+.item-display .e2 p{width:250px; height: 32px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.item-display .e3 a.unread{ color:#f85659;}
+.item-display .e4{width:170px; padding-left: 0;}
+.item-display .e4 p{ text-align: left; padding-left: 5px;}
+.item-display .e4 a{ padding:0 5px; float:left;}
+.item-offline .e4 a.gray{ color:#aaa; cursor: default;}
+.item-offline .e4 a.refresh{ color:#0168b7; cursor: pointer;}
+.item-display .box-refresh{ float:left; position: relative; cursor: pointer;}
+
+/*翻页样式*/
+.pageList {clear: both; height:30px;padding:30px 5px 5px; text-align: center;margin:0 auto; background: #f8f8f8; overflow: hidden;}
+
+/*弹窗*/
+.pop-info .pop-title{background:#f85659; text-align: left;}
+.pop-info .pop-title .close i.close-pop{ background-position: 0 -20px;}
+.pop-info .pop-cont{ max-height: auto; margin-bottom:20px;}
+
+span.depart{width:82px; float:left; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+/*二次弹窗*/
+.npopUp i.p-icon{ display: block; width:14px; height: 14px; background: url(../img/pop.png) no-repeat 0 0; cursor: pointer;}
+.npopUp{ width:100%; height: 100%; position: fixed; left:0; top:0; z-index: 100;}
+.npopUp .bgPop{ width:100%; height: 100%;background: #000;filter: alpha(opacity=60);opacity: 0.6;}
+.npopUp .borPop{ width:400px; height: 149px;border:7px solid #4a4a4a; position: fixed; left:50%; top:24%; z-index: 1; margin-left: -200px;}
+.npopUp .borPop .boxPop{ width:400px; height: 149px; background: #fff; text-align: center;}
+.npopUp .borPop .boxPop .closePop{ width:14px; height: 14px; float: right; margin-right: 13px; margin-top: 13px;}
+.npopUp .borPop .boxPop .msgPop{ padding-top: 30px; line-height: 36px; font-size:16px; font-weight: bold; color:#777; text-align: center;}
+.npopUp .borPop .boxPop .btnPop{ margin-top: 25px; display: inline-block; line-height: 30px; background:#f85659; border:1px solid #f85659; border-radius: 3px; padding:0 23px; color:#fff; font-size: 16px; font-weight: bold;transition:1s; cursor: pointer;}
+.npopUp .borPop .boxPop .btnPop:hover{ background: #fff; color:#f85659;}
+
+/*暂时去掉复选框*/
+.pauseJobManage .e1{ display: none;}
+.pauseJobManage .e2{width:300px;}
+.pauseJobManage .e2 p{width:300px; height: 32px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.pauseJobManage .e2 .name{max-width: 185px;}
+.pauseJobManage .e2 span.depart{ width:105px;}
+.pauseJobManage .e3{width:245px;}
+.pauseJobManage .e4{width:165px;}
+
+/*左侧加广告位*/
+.lf-posManage .jobAD{ width:220px; height: 140px; margin-top: 15px; overflow: hidden;}
+
+/*职位搬家搜索页*/
+.tipSer-jobMove{ padding:20px 70px 0 25px; min-height:365px; line-height: 30px; color:#999; overflow: hidden;}
+.tipSer-jobMove h4{ font-size: 14px;}
+.tipSer-jobMove em{ float:left; width:15px;}
+.tipSer-jobMove span{ float:left; width:675px;}
+
+/*职位搬家公司列表页*/
+.ser-jobMove{ padding:26px 24px 10px; background: #fff; overflow: hidden;}
+.ser-jobMove .serBox{ overflow: hidden;}
+.ser-jobMove .serBox .serJobMove{ display: block; width:616px; height:36px; padding-left: 13px; border:2px solid #f85659; float:left; font-size: 16px; color:#555;}
+.ser-jobMove .serBox .serbtn{ display: block; width:106px; height: 40px; line-height: 40px; float:left; text-align: center; color:#fff; font-size: 18px; background:#f85659; cursor: pointer;}
+.ser-jobMove .filter-jobMove{ line-height:40px; color:#999;}
+.ser-jobMove .filter-jobMove a{ margin:0 12px; color:#555;}
+.ser-jobMove .filter-jobMove a:hover,.ser-jobMove .filter-jobMove a.on{ color:#f85659; font-weight: bold;}
+.ser-jobMove .filter-jobMove a#allWeb,.ser-jobMove .filter-jobMove a#qiancheng{ display: none;} /*暂时隐藏全部和前程无忧按钮*/
+
+.line-jobMove{ height:10px; background:#f8f8f8;}
+.comList-jobMove .til-comList{ height: 50px; line-height: 50px; font-size: 16px; color:#777; font-weight: bold; padding-left:25px;}
+.comList-jobMove .item-comList li{ height: 60px; line-height: 60px; border-top:1px solid #eee;}
+.comList-jobMove .item-comList li span,.til-jobList span{display: block; float:left; margin-left: 25px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.comList-jobMove .item-comList li span.s1{ width:250px;}
+.comList-jobMove .item-comList li span.s1 a{ color:#0168b7; font-size: 16px;}
+.comList-jobMove .item-comList li span.s2,.til-jobList .s2{ width:370px; color:#e1e1e1;}
+.comList-jobMove .item-comList li span.s2 em,.til-jobList .s2 em{ color:#999; padding:0 10px;}
+/* .comList-jobMove .item-comList li span.s3,.til-jobList .s3{ width:85px; color:#999;}
+.comList-jobMove .item-comList li span.s3 em,.til-jobList .s3 em{ color:#f85659; margin-right:4px;} */
+.comList-jobMove .item-comList li span.s4,.til-jobList .s4{ width:42px; height:20px; line-height: 20px; margin-top:20px; border-width:1px; border-style:solid; border-radius: 2px; text-align: center; font-weight: bold;}
+.comList-jobMove .item-comList li span.qiancheng,.til-jobList .qiancheng,.comList-jobMove .item-comList li span.qiancheng a,.til-jobList .qiancheng a{ color:#f8b551;}
+.comList-jobMove .item-comList li span.zhilian,.til-jobList .zhilian,.comList-jobMove .item-comList li span.zhilian a,.til-jobList .zhilian a{ color:#4f98e8;}
+
+.noResult-jobMove{ padding:100px 20px 0;min-height:265px; overflow: hidden;}
+.noResult-jobMove img{ float:left; margin-left: 150px; margin-right: 20px;}
+.noResult-jobMove h3{ font-size: 16px; color:#999; margin-top: 20px;}
+
+/*职位搬家职位列表页*/
+.til-jobList{ height:50px; line-height: 50px; overflow: hidden;}
+.til-jobList .s1{ font-weight: bold; font-size: 16px; color:#777;}
+.til-jobList .s4{ margin-top: 15px;}
+
+.item-jobList li{ height: 60px; line-height: 60px; border-top: 1px solid #eee; overflow: hidden;}
+.item-jobList li span{display: block; float:left; margin-left: 25px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.item-jobList li span.s1,.til-jobList .s1{ width:225px;}
+.item-jobList li span.s1 i.c-icon.choice{ margin-left:0;}
+.item-jobList li span.s1 a{ font-size: 16px; color:#0168b7; margin-left: 5px;}
+.item-jobList li span.s2,.til-jobList .s2{ width:295px;}
+.til-jobList .s2{width:410px; margin-left: 15px;}
+/*.item-jobList li span.s3,.til-jobList .s3{ width:105px; color:#999;}*/
+.item-jobList li span.s4{ width:60px; color:#80c269;}
+.item-jobList li span.s4.success{color:#80c269;}
+.item-jobList li span.s4.fail{ color:#ff0000;}
+
+.all-jobList{ padding-left: 15px; height:50px; line-height: 50px; border-top:1px solid #eee; overflow: hidden;}
+.all-jobList .right-btn{ float:right;}
+.all-jobList .btn-jobMove{display: inline-block;width:80px; height: 30px; line-height: 30px; background:#f85659; border-radius: 2px; color:#fff;text-align: center; margin:10px 15px 0 10px;}
+.all-jobList i.c-icon.choice{ margin-right: 10px;}
+.all-jobList em{ color:#f85659;}
+.all-jobList span{ cursor: pointer;}
+
+/*职位搬家结果页*/
+.result-jobList li span.s2{ width:230px;}
+.result-jobList li span.s3{ width:80px;}
+.result-jobList li span.s4{ width:150px;}
+.countRes-jobList{ height: 50px; line-height: 50px; padding-left: 25px; border-top:1px solid #eee; overflow: hidden;}
+.countRes-jobList em{ color:#f85659;}
+
+/*正在搬家,狐狸跑样式*/
+.pop-info.foxRuning .pop-title{height:0;}
+.pop-info.foxRuning .pop-cont{ margin-top: 20px;}
+.pop-info.foxRuning .pop-cont .foxRun{float:left; margin-left:30px;}
+.pop-info.foxRuning .pop-cont h3{width:200px; float:left; margin-top: 30px; font-size: 16px; color:#999;}
+/*搬家失败,狐狸哭样式*/
+.pop-info.foxCrying{ width:457px;}
+.pop-info.foxCrying .pop-cont,.pop-info.creatCom .pop-cont{ margin-top: 20px;}
+.pop-info.foxCrying .pop-cont .foxCry{float:left; margin:10px 15px 0;}
+.pop-info.foxCrying .pop-cont h3{width:275px; float:left; text-align: left; font-size: 16px; color:#999; line-height: 32px;}
+
+/*搬家结果样式*/
+.pop-info.resultPop .pop-cont{ margin-top: 20px; line-height: 26px; overflow: hidden;}
+.pop-info.resultPop .pop-cont .bigW em{ color:#f85659;}
+.pop-info.resultPop .pop-cont .minW{ font-size:14px; color:#999; font-weight: normal;margin-top: 5px;}
+

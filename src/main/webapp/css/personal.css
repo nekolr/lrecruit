@@ -1,0 +1,69 @@
+/*common css*/
+.main{ color:#666;}
+a{ color:#666;}
+a:hover{ color:#f85659;}
+h1,h2,h3,h4,h5,h6{font-family: 寰蒋闆呴粦,"Microsoft YaHei" ! important;}
+.main i.m-icon{ width: 14px; height:14px; display: inline-block; background: url(../images/personal.png) no-repeat; vertical-align: middle;}
+.main i.i-resume{ background-position: 0px 0px;}
+.main i.i-default{ width: 10px;height: 17px; background-position:0 -144px;}
+.main i.i-new{ width: 15px;height: 15px; background-position:0 -22px;}
+.main i.i-progress{ background-position:0 -46px;}
+.main i.i-collect{ background-position:0 -69px;}
+.main i.i-secret{ background-position:0 -92px;}
+.main i.i-account{ background-position:0 -115px;}
+
+/*寮规*/
+.pop-dafault{ padding:6px; background: #999; background: rgba(0,0,0,.3); overflow: hidden; position: absolute; left:152px; top:32px;}
+.pop-dafault p{ font-size: 15px; line-height: 22px; padding:25px 30px; background: #fff;}
+
+/*宸︿晶鍒楄〃*/
+.lf-person{ width:240px; float:left; background: #fff; margin-right: 15px;position: relative;z-index: 10;}
+.lf-person a{ display: block; height: 40px; line-height: 40px; border-bottom: 1px solid #eee; font-size: 16px; border-left:3px solid #fff; padding-left: 16px; color:#666;position: relative;}
+.lf-person a i.m-icon{ margin-right: 9px; margin-top: -2px;}
+.lf-person .myResume ul li.new{ position: relative;z-index: 2;}
+.lf-person .myResume p a.on i.i-resume{ background-position: -26px 0;}
+.lf-person .progress p a.on i.i-progress{ background-position: -26px -46px;}
+.lf-person .collect a:hover i.i-collect,.lf-person .collect p a.on i.i-collect{ background-position: -26px -69px;}
+.lf-person .secret a:hover i.i-secret,.lf-person .secret p a.on i.i-secret{ background-position: -26px -92px;}
+.lf-person .account a:hover i.i-account,.lf-person .account p a.on i.i-account{ background-position: -26px -115px;}
+.lf-person p a.on{ color:#f85659; font-weight: bold;}
+.lf-person p.tilMR a:hover{ border-left-color:#f85659; background: #f4f4f4;color:#f85659;font-weight: bold;}
+.lf-person p.noPointer a{ cursor: default;}
+.lf-person li a{ padding-left: 37px; font-size: 14px;position: relative;}
+.lf-person li a:hover{ border-left-color:#f85659; background: #f4f4f4; color:#666;}
+.lf-person li.dafault a i.i-default{ position: absolute; right:1px; top:2px;}
+
+.item-person.myResume ul a {padding-right: 20px;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.newMsg {width: 10px;height: 10px;background: #f9aeaf;position: absolute;right: 100px;top: 8px;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;}
+
+.lf-person .app .i-app {width:19px;height:17px;background-position: 0 -220px;}
+.lf-person .app a:hover .i-app,.lf-person .app a.on .i-app {width:19px;height:17px;background-position: -28px -220px;}
+.lf-person .app a:hover .newMsg,.lf-person .app a.on .newMsg {background: #f95659;}
+
+.cutLine {background: #f8f8f8;height: 20px;}
+
+/*鏂板缓绠�鍘�*/
+.newAdd{ width:159px; height: 94px; position: absolute; left:240px; bottom:-26px; z-index: 2; display: none;}
+.newAdd .wrap-triangle{ width:7px; float:left;}
+.newAdd .triangle{ width: 0;height: 0;border-top: 7px solid transparent;border-bottom: 7px solid transparent;border-right: 7px solid #ddd; margin-top: 40px;}
+.newAdd ul{ float:left; width:148px; background: #fff; border:2px solid #ddd; text-align: center;}
+.newAdd ul li a{ display: block; height: 30px; line-height: 30px; border:none; padding:0; }
+.newAdd ul li a:hover{ background: #ebebeb;}
+
+/*榛樿绠�鍘�*/
+.lf-person .myResume i.i-default{ position: relative;}
+.default{width: 223px;padding: 7px;background: #b2b2b2;background: rgba(0,0,0,.5);overflow: hidden;position: absolute;left: 230px;top: 0px;z-index: 2;display: none;}
+.default div{ width:223px; padding:26px 0;line-height: 22px; font-size: 15px; background: #fff; text-align: center;}
+.dafault {position: relative;}
+/*.lf-person .myResume .dafault:hover .default{ display: block;}*/
+
+/*鍙充晶*/
+.rt-person{ width:769px; float:left;position: relative;z-index: 1;background:white;}
+
+.lf-person  .choose{
+    border-left-color:#f85659 ;
+    background: #f4f4f4 ;
+    color:#f85659 ;
+    font-weight: bold ;
+}

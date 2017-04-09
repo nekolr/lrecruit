@@ -1,0 +1,394 @@
+/*common css*/
+a{ color:#666;}
+a:hover{ color:#f85659;}
+h1,h2,h3,h4,h5,h6{font-family: 寰蒋闆呴粦,"Microsoft YaHei" ! important;}
+input.txt{padding:0; margin:0;height: 40px; line-height: 40px; border:1px solid #ddd;padding: 0 38px 0 15px;width: 215px; font-size: 16px; color:#555; display: block;}
+textarea{padding: 0;margin: 0;border: 0;line-height: 32px;padding: 0 15px;width: 578px;height: 94px;font-size: 16px;color: #555;display: block;resize: none;}
+.triangle{width: 0;height: 0;border-left: 11px solid transparent;border-right: 11px solid transparent;border-bottom: 11px solid #efefef; margin:0 auto;}
+
+.box-myResume i.m-icon{ width: 14px; height:14px; display: inline-block; background: url(../images/myResume.png) no-repeat; vertical-align: middle;}
+.box-myResume i.i-on{width:38px; height: 20px; background-position:-195px -100px; margin-right: 10px; margin-top:-2px;}
+.box-myResume i.i-off{width:38px; height: 20px; background-position:-195px -60px; margin-right: 10px; margin-top:-2px;}
+.box-myResume i.i-minPen{width:12px; height: 15px; background-position:-63px 0px; margin-top:-2px;}
+.box-myResume i.i-break{width:13px; height: 13px; background-position:-89px 0px; margin-top:-2px;}
+.box-myResume i.i-view{width:31px; height: 23px; background-position:-63px -60px;}
+.box-myResume i.i-download{width:22px; height: 23px; background-position:-112px -60px;}
+.box-myResume i.i-delBtn{width:23px; height: 23px; background-position:-154px -60px;}
+.box-myResume i.i-reFresh {width:29px;height: 29px;background-position:0px -263px;}
+.box-myResume i.i-more{ width:25px; height: 22px; background-position:-251px -60px;}
+.box-myResume i.i-more.on {background-position:-251px -100px;}
+.box-myResume i.i-boy{width:21px; height:21px;background-position:-120px -100px; margin-right:6px; }
+.box-myResume i.i-girl{width:21px; height:21px;background-position:-157px -100px; margin-right: 6px;}
+.box-myResume i.i-person{width:15px; height:15px;background-position:-116px 0px;}
+.box-myResume i.i-file{width:15px; height:15px;background-position:-144px 0px;}
+.box-myResume i.i-target{width:15px; height:15px;background-position:-172px 0px;}
+.box-myResume i.i-phone{width:15px; height:15px;background-position:-200px 0px;}
+.box-myResume i.i-mail{width:15px; height:15px;background-position:-227px 0px;}
+.box-myResume i.i-web{width:17px; height:17px;background-position:-254px 0px;}
+.box-myResume i.i-pen{width:17px; height:19px;background-position:-282px 0px;}
+.box-myResume i.i-addBlue{width:15px; height:15px;background-position:-63px -25px; margin-top: -2px; margin-right:8px; }
+.box-myResume i.i-minCir{width:4px; height:4px;background-position:-275px -25px;display: block;}
+.box-myResume i.i-maxCir{width:16px; height:16px;background-position:-235px -25px; display: block;}
+.box-myResume i.i-plusBlue{width:12px; height:13px;background-position:-95px -100px; margin-right: 12px; margin-top: -2px;}
+.box-myResume i.i-bluePen{width:12px; height:17px;background-position:-99px -25px; margin-right: 12px; margin-top: -2px;}
+.box-myResume i.choice{width:13px; height:13px;background-position:-56px -100px; margin-right: 1px; margin-top: -2px;}
+.box-myResume i.choiced{width:13px; height:13px;background-position:-75px -100px;}
+.box-myResume i.i-delBlue{width:20px; height:19px;background-position:-25px -60px; margin-right:8px;}
+.box-myResume i.i-delBlueCir{width:15px; height:15px;background-position:-38px -25px; margin-right:8px; margin-top: 2px;}
+.box-myResume i.i-trophy1{width:19px; height:26px;background-position:-130px -25px;}
+.box-myResume i.i-trophy2{width:19px; height:26px;background-position:-164px -25px;}
+.box-myResume i.i-upload{width:75px; height:54px;background-position:-30px -130px;}
+.box-myResume i.i-link{width:23px; height:25px;background-position:-292px -25px; margin-right:20px;}
+.box-myResume i.i-addRed{width:103px; height:103px;background-position:-183px -130px;}
+.box-myResume i.i-dashed{width:103px; height:103px;background-position:-183px -240px; display: table-cell; vertical-align: middle;*height:73px;*padding-top: 30px;}
+.box-myResume i.i-dn{width:12px; height:7px;background-position:-32px 0;}
+
+/*瀹屾垚搴�*/
+.box-myResume i.p-icon{width:83px; height: 83px; display: inline-block; background: url(../images/degree.png) no-repeat; vertical-align: middle;}
+.box-myResume i.per0{background-position:0 0;}
+.box-myResume i.per10{background-position:0 -100px;}
+.box-myResume i.per20{background-position:0 -200px;}
+.box-myResume i.per30{background-position:0 -300px;}
+.box-myResume i.per40{background-position:0 -400px;}
+.box-myResume i.per50{background-position:0 -500px;}
+.box-myResume i.per60{background-position:-110px 0;}
+.box-myResume i.per70{background-position:-110px -100px;}
+.box-myResume i.per80{background-position:-110px -200px;}
+.box-myResume i.per90{background-position:-110px -300px;}
+.box-myResume i.per100{background-position:-110px -400px;}
+
+/*鎶�鑳�*/
+.box-myResume i.l-icon{ display: block; width:110px; height: 110px; background: url(../img/special.png) no-repeat;}
+.box-myResume i.level03{ background-position: 0 0;}
+.box-myResume i.level02{ background-position: -120px 0;}
+.box-myResume i.level01{ background-position: -240px 0;}
+.box-myResume i.level04{ background-position: -360px 0;}
+.box-myResume i.gray{ background-position: -480px 0;}
+.box-myResume i.addGray{ background-position: 0 -130px;}
+.box-myResume i.addHover{ background-position: -120px -130px;}
+.box-myResume i.closeRed{width:21px; height: 21px; background-position: -240px -130px; cursor: pointer;}
+
+/*缂栬緫鎸夐挳*/
+.changeBase{ text-align: right; margin-right: 30px; cursor: pointer;}
+/*娣诲姞鎸夐挳*/
+.addInfor,.btnBar{ text-align: right; margin-right:22px; color:#0068b7; cursor: pointer; }
+.btnBar i {margin-right: 10px;}
+/*棣栨娣诲姞*/
+.firstAdd{ text-align: center; padding-top: 20px;}
+.firstAdd .tipFAdd{ color:#ff0000; font-size: 13px; line-height:22px;}
+.firstAdd .btnFAdd{ width:713px; border:1px dashed #d4d4d4; height:59px; line-height: 59px; color:#0068b7; margin: 10px auto 0; cursor: pointer;background-color: #f8f8f8;}
+.firstAdd .btnFAdd:hover{ background:#f1f1f1; }
+/*缂栬緫鍐呭*/
+.wordMr{ height: 34px; line-height: 34px; font-size: 16px; color:#999;}
+.wordMr em{display: inline-block; width:15px; color:#ff0000;}
+.inputTime{position:relative;z-index:10;}
+.inputMr{ margin-left: 15px; position: relative;}
+.inputMr.ta {height: 124px;border: 1px solid #ddd;background-color: #FFF;width: 608px;}
+.inputMr .iptLast {color: #C3C3C3;position: absolute;right: 65px;top: 12px;}
+.inputMr.xl input.txt {width:195px;padding:0 58px 0 15px;}
+.inputMr .num{position: absolute;right: 10px;bottom: 6px;background-color: #FFF;text-align: right;}
+.inputMr .num em{color:#ff0000;}
+.inputMr input.txt{ float:left; margin-right: 3px;}
+.inputTime input.txt{position: relative;*left:-15px;}
+.inputMr .discuss{width: 53px; float:left; font-size: 13px; line-height: 42px; cursor: pointer;}
+.wrap-btn{ text-align: center; padding-top: 20px; clear: both;}
+input.btn{ height:34px; line-height: 34px; border:1px solid #f85659; background:#f85659; color:#fff; font-size:16px; border-radius: 2px; padding:0 20px; margin:0 8px; font-weight: bold; cursor: pointer; }
+input.btn.white{ border-color:#aaa; background:#fff; color:#999; }
+.err{ margin-left:15px; width:270px;font-size: 14px; color:#ff0000; line-height: 14px; padding-top: 13px; overflow: hidden;}
+
+/*妯℃嫙涓嬫媺鑿滃崟*/
+.inputMr .ipt-child{height: 42px; width:270px; position: relative;white-space: nowrap;text-overflow: ellipsis;}
+.inputMr .ipt-child.half {width:125px;margin-right: 20px;}
+.inputMr .ipt-child.half span {width:93px;}
+.inputMr .ipt-child .ipt-spn{ padding:0 15px; height: 40px; border:1px solid #ddd;width:238px;line-height: 40px; border:1px solid #ddd; font-size: 16px; color:#555; text-align: left;}
+.inputMr .ipt-child .ipt-spn i{ position: absolute; top:17px; right:9px;}
+.inputMr .ipt-child ul{ z-index: 1; border-color:#ddd;}
+.inputMr .ipt-child ul li{ border-color:#ddd;}
+.calender .selc-child span { padding:0 15px; height: 40px; border:1px solid #ddd;width:238px;line-height: 40px; border:1px solid #ddd; font-size: 16px; color:#555; text-align: left;}
+.calender .selc-child span i { position: absolute; top:17px; right:9px;}
+
+/*鍩烘湰淇℃伅缂栬緫*/
+.conedBase{ background: #efefef; padding:46px 19px 40px 60px; font-size: 16px; color:#999;}
+.conedBase .edBase01{ clear: both;}
+.conedBase .edBase01 .lfBase01{width:341px;float:left; margin-top: 6px;}
+.conedBase .edBase01 .rtBase01{width:341px;float:left; margin-top: 6px;}
+.conedBase .inputMr a.iptRadio{ display: inline-block; width:68px; height: 40px; line-height: 40px; background: #fff; border:1px solid #ddd; text-align: center; color:#999; margin-right: 8px;}
+.conedBase .inputMr a.iptRadio.checked{ background: #a2c2d1; border:1px solid #a2c2d1; color:#fff;}
+.conedBase .inputMr a.iptRadio.checked i.i-boy{ background-position: -120px -130px;}
+.conedBase .inputMr a.iptRadio.checked i.i-girl{ background-position: -157px -130px;}
+.conedBase .inputTime>div{ float:left; margin-right: 7px;}
+.conedBase .inputTime .oneWord{ line-height: 42px;}
+
+/*鏍囬*/
+.tilPart{ width:100%; height:40px; line-height: 40px; position: relative; text-align: center;}
+.tilPart .wzPart{ width:100%; height: 40px; position: absolute; left:0; top:0;}
+.tilPart span{ padding:0 5px; background:#fff; font-size:20px;}
+.tilPart .dashed{ height: 21px; width:100%; border-bottom:1px dashed #eee;}
+
+
+.box-myResume{width:769px; margin:0 auto;}
+/*涓汉绠�鍘�*/
+.top-myResume{ width:100%; height: 155px; background: #fff;}
+.top-myResume .bar-myResume{ height: 40px; line-height: 40px; border-bottom: 1px solid #eee;}
+.top-myResume .bar-myResume .onOff{ float:right; color:#999;margin-right: 22px; cursor: pointer;position: relative;z-index: 2;}
+.top-myResume .lf-bar .til-myResume{ float:left; margin-right: 15px; padding-left: 35px; font-size: 17px; cursor: pointer;}
+.top-myResume .lf-bar .til-myResume em{ margin-right: 10px;_width:180px;*width:180px;max-width: 240px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;float: left;}
+.top-myResume .lf-bar .line-myResume{width: 1px; height: 25px; background: #eee; float:left; margin-right: 15px; margin-top: 7px;}
+.top-myResume .lf-bar .date-myResume{ float:left; color:#999; cursor: pointer;}
+.top-myResume .lf-bar .date-myResume em{ margin-right: 10px;}
+.top-myResume .more-myResume{ float:right; width:114px; height: 114px; border-left:1px dashed #eee; text-align: center; line-height: 44px; color:#999; cursor: pointer;}
+.top-myResume .more-myResume i.m-icon{ display: block; margin:35px auto 0;}
+.top-myResume .more-myResume.mini i.m-icon {margin:5px auto 0;}
+.top-myResume .degree-myResume .percent{ width:83px; height: 44px; line-height: 22px; padding:19px 0 20px; text-align: center; position:relative; float:left;margin-left: 24px; margin-right: 20px; margin-top: 15px; }
+.top-myResume .degree-myResume .percent .bg{ width:83px; height: 83px; position: absolute; left:0; top:0;}
+.top-myResume .degree-myResume .percent em{color:#f95659;}
+.top-myResume .degree-myResume .msg-audit{ height: 44px; line-height: 22px; padding:35px 0; color:#999;}
+.top-myResume .degree-myResume .msg-audit .msg{ color:#f95659;}
+
+/*涓汉绠�鍘嗕富浣�*/
+.main-myResume{ width:100%; margin-top: 15px; background: #fff;}
+.main-myResume .name-mr{ height: 186px; position: relative;}
+.main-myResume .bg-name{ width:100%; height: 115px; background: #E6E6E6; border-bottom: 1px solid #eee;}
+.main-myResume .pro-name{ height: 138px; padding-left: 111px; position: absolute; left:0; top:0;}
+.main-myResume .pro-name .perPhoto{width:138px; height: 138px; border-radius: 50%;-webkit-border-radius: 50%; background: #fff; float:left; margin-right: 50px; margin-top: 48px; position: relative; cursor: pointer;}
+.perPhoto input {display: none;}
+.main-myResume .pro-name .camera{ display:block; width:128px; height:128px; background:url(../images/camera.png) no-repeat 0 0;filter:alpha(opacity=0);opacity: 0;transition:.8s; position: absolute;left:5px; top:5px; cursor: pointer;}
+.main-myResume .pro-name .perPhoto img{display: block; width:128px; height: 128px; border:5px solid #fff; border-radius: 50%;}
+.main-myResume .pro-name .perPhoto:hover .camera{filter:alpha(opacity=100);opacity: 1;}
+.main-myResume .pro-name .wz-name{ float:left; margin-top: 75px;}
+.main-myResume .pro-name .wz-name h3{ font-size: 22px; color:#fff; line-height: 40px; overflow: hidden; font-weight: bold;}
+.main-myResume .pro-name .wz-name p{padding-top: 10px;line-height: 22px;font-size: 15px;width: 450px;height: 44px;display: block;overflow: hidden;text-overflow: ellipsis;}
+.perPhoto:hover .default {display: block;left: 95px;top: 100px;}
+
+.canAdd {margin-top:40px;}
+
+/*鍩烘湰淇℃伅鏄剧ず*/
+.inforBase{ margin-top: 20px; overflow: hidden;}
+.inforBase .lfInBase,.inforBase .rtInBase{width:328px; padding-left:56px; float:left; line-height: 28px;}
+.inforBase li{ margin-top: 7px; overflow: hidden;}
+.inforBase li i.m-icon{ float:left; margin-top: 7px;}
+.inforBase li i.m-icon.i-mail{ margin-top: 10px;}
+.inforBase li .conInBase{ margin-left: 33px;}
+.inforBase li .conInBase em{ margin-right: 15px;}
+
+/*宸ヤ綔缁忓巻*/
+.work-mr{ margin-top: 30px;}
+.inforWork{ padding-left:48px;}
+.minCir{ margin-left: 6px; height: 4px; width:4px;}
+.maxCir{ height: 16px; width: 16px; position: relative; z-index: 2;}
+.tilEdit{ border-left:2px solid #eee; margin-left: 7px; padding-left:32px; line-height: 20px; padding-top:15px; padding-bottom: 20px;}
+.tilEdit i{ float:right; margin-right: 30px; cursor: pointer;}
+.tilEdit h3{ font-size:16px; }
+
+.conWork{ margin-left: 7px; border-left:2px solid #eee; padding-left: 32px; line-height:22px; color:#999; font-size: 14px; padding-bottom: 20px;}
+.conWork .jobTime{float:right;margin-right:30px;}
+.conWork .conCom,.conWork .conJob{ width:480px; margin-top: 10px;}
+.conWork .conJob {white-space: pre-wrap;word-wrap: break-word;}
+.conWork .conCom{ margin-top: -20px;}
+.conWork .conCom em {white-space: pre-wrap;word-wrap: break-word;}
+.work-mr .conWork .conCom p{ margin-left: -9px;}
+.work-mr .conWork .conCom p em{ border-right:1px solid #bcbcbc; padding:0 10px;}
+.work-mr .conWork .conCom p em:last-child{ border-right:none;}
+.work-mr .conWork .conCom p:last-child em{ border:none;}
+
+/*鏁欒偛缁忓巻*/
+.edu-mr{ margin-top: 30px;}
+.edu-mr .inforWork .conCom em{ margin-right: 13px;}
+.inforEdu { padding-left:48px;}
+
+/*姹傝亴鎰忓悜*/
+.inten-mr{margin-top: 30px;}
+.inten-mr .inforInten{ padding:20px 90px 20px;margin-top:0!important;}
+.inten-mr .inforInten>div{ margin-top: 10px;}
+.inten-mr .inforInten .boxInInten01 span{ float:left;}
+.inten-mr .inforInten .boxInInten01 .rtInInten01{ padding-left: 72px; color:#999; line-height: 22px;}
+
+/*椤圭洰缁忓巻*/
+.project-mr{ margin-top: 30px;}
+.inforProject { padding-left:48px;}
+
+/*鍩硅缁忓巻*/
+.train-mr{ margin-top: 30px;}
+.inforTrain{ padding-left:48px;}
+.edTrain .etChild{width:131px; height: 175px; float:left; margin:20px 30px 20px 0;}
+.edTrain .etChild i.closeRed{display: inline-block; float:right; text-align:right; cursor: pointer;}
+.edTrain .etChild .itemLevel { clear: both; width:110px; height: 110px;position:relative; cursor: pointer;}
+.edTrain .etChild .itemLevel div{ width:55px; height: 55px; position: absolute;}
+.edTrain .etChild .itemLevel div.rtTop{ right:0; top:0;}
+.edTrain .etChild .itemLevel div.rtBottom{ right:0; bottom:0;}
+.edTrain .etChild .itemLevel div.lfBottom{ left:0; bottom:0;}
+.edTrain .etChild .itemLevel div.lfTop{ left:0; top:0;}
+.edTrain .etChild em{ display: block;width:110px; height:110px; line-height: 110px; text-align: center; position: absolute; left:0; top:0;}
+.edTrain .etChild .itemLevel i.l-icon{ display: none;}
+.edTrain .etChild .itemLevel i.gray{ display: block;}
+.edTrain .etChild .itemLevel i.level01,.edTrain li .itemLevel i.level02,.edTrain li .itemLevel i.level03,.edTrain li .itemLevel i.level04{ position: absolute; left:0; top:0;}
+.edTrain .etChild .itemLevel i.level01.on,.itemLevel i.level02.on,.itemLevel i.level03.on,.itemLevel i.level04.on {display: block;}
+
+.edTrain .etChild.addLevel{ position: relative; cursor: pointer;}
+.edTrain .etChild.addLevel i{position: absolute;left:0; top:21px;}
+.edTrain .etChild.addLevel i.addHover{filter:alpha(opacity=0);opacity: 0; transition:.8s; z-index: 2;}
+.edTrain .etChild.addLevel:hover i.addHover{filter:alpha(opacity=100);opacity: 1;}
+.edTrain .etChild .selc-Train{ height:26px; line-height: 26px; margin-top: 13px;}
+.edTrain .etChild .selc-Train span{width:123px; border-color:#ddd; background: #fff; line-height: none; padding:0; padding-left:5px;}
+
+/*涓撲笟鎶�鑳�*/
+.special-mr{ margin-top: 30px;}
+.inforSpecial{ padding:0 50px; overflow: hidden;margin-top:0!important;}
+.inforSpecial li{ width:25%; float:left; overflow: hidden; line-height: 50px; text-align: center; margin-top: 35px;}
+.inforSpecial li i{ text-align: center;line-height: 110px; font-size:18px; margin:0 auto;}
+.inforSpecial li p{ height: 50px; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;}
+.selc-Special{ height:26px; line-height: 26px; margin-top: 13px;position: relative;}
+.selc-Special input {width: 87px;height: 26px;padding: 0 17px 0 4px;font-size: 14px;line-height: 26px;text-align: center;}
+.selc-Special .ico-intxt{right: 25px;top: 12px;}
+.edSpecial .etChild{width:131px; height: 175px; float:left; margin:20px 30px 20px 0;}
+.edSpecial .etChild i.closeRed{display: inline-block; float:right; text-align:right; cursor: pointer;}
+.edSpecial .etChild .itemLevel { clear: both; width:110px; height: 110px;position:relative; cursor: pointer;}
+.edSpecial .etChild .itemLevel div{ width:55px; height: 55px; position: absolute;z-index: 2;}
+.edSpecial .etChild .itemLevel div.rtTop{ right:0; top:0;}
+.edSpecial .etChild .itemLevel div.rtBottom{ right:0; bottom:0;}
+.edSpecial .etChild .itemLevel div.lfBottom{ left:0; bottom:0;}
+.edSpecial .etChild .itemLevel div.lfTop{ left:0; top:0;}
+.edSpecial .etChild em{ display: block;width:110px; height:110px; line-height: 110px; text-align: center; position: absolute; left:0; top:0;}
+.edSpecial .etChild .itemLevel i.l-icon{ display: none;}
+.edSpecial .etChild .itemLevel i.gray{ display: block;}
+.edSpecial .itemLevel i.level01,.edSpecial li .itemLevel i.level02,.edSpecial li .itemLevel i.level03,.edSpecial li .itemLevel i.level04{ position: absolute; left:0; top:0;z-index: 1;}
+.edSpecial .itemLevel i.level01.on,.edSpecial .itemLevel i.level02.on,.edSpecial .itemLevel i.level03.on,.edSpecial .itemLevel i.level04.on {display: block;}
+
+.edSpecial .etChild.addLevel{ position: relative; cursor: pointer;}
+.edSpecial .etChild.addLevel i{position: absolute;left:0; top:21px;}
+.edSpecial .etChild.addLevel i.addHover{filter:alpha(opacity=0);opacity: 0; transition:.8s; z-index: 2;}
+.edSpecial .etChild.addLevel:hover i.addHover{filter:alpha(opacity=100);opacity: 1;}
+.edSpecial .etChild .selc-Train{ height:26px; line-height: 26px; margin-top: 13px;}
+.edSpecial .etChild .selc-Train span{width:123px; border-color:#ddd; background: #fff; line-height: none; padding:0; padding-left:5px;}
+
+/*璇█鎶�鑳�*/
+.lang-mr{ margin-top: 30px;}
+.inforLang{ padding:20px 170px 0;line-height: 56px; font-size: 16px; overflow: hidden;}
+.inforLang li{width:50%; float:left;}
+.inforLang li span{ display: inline-block; width:100px;}
+.inforLang em{ color:#999;}
+.inforLang .otherLang{ clear: both;}
+.inforLang .otherLang span{ margin-right:40px; }
+
+/*璇佷功鍙婂椤�*/
+.cert-mr{ margin-top: 30px;}
+.inforCert{ padding:0 0 0 50px; overflow: hidden;}
+.inforCert .inCert01{ padding-bottom: 25px; line-height: 26px; }
+.inforCert .conInCert{ margin-left:40px; }
+.inforCert i.i-trophy1,.inforCert i.i-trophy2{ float:left; margin-top: 5px;}
+.inforCert .boxInCert i{ float:right; margin-right: 30px; cursor: pointer;}
+.inforCert .wordInCert,.inforCert h3{ max-width:550px; }
+.inforCert .wordInCert{ color:#999;}
+.inforCert i{color:#999; margin-top: 5px;}
+.inforCert .delBtn { margin-top: 6px!important;}
+.inforCert .btnBar { float:right;}
+.inforCert h3{ font-size: 16px;}
+
+/*浣滃搧灞曠ず*/
+.achiev-mr{ margin-top: 30px;}
+.tiledAch ul{ text-align: center; font-size: 0;}
+.tiledAch li{ display: inline-block;*display:inline;*zoom:1; font-size: 17px; padding:0 28px; line-height: 39px; line-height: 39px; border-bottom:3px solid #fff; background: #fff; border-right: 1px dashed #eee; color:#999; cursor: pointer;}
+.tiledAch li.on,.tiledAch li:hover{ border-bottom-color:#f95659; color:#f95659;}
+.tabedAch{ margin-top:15px; }
+.edAch01{ padding-top: 20px; margin:0 0 10px 15px; clear: both; overflow: hidden;}
+.edAch01 .edArea{ width:610px; height:398px; border:1px solid #ddd;background: #fff; text-align: center; display: table;}
+.edAch01 .upload{ display: table-cell; vertical-align: middle; line-height:34px; font-size: 14px; color:#999; }
+.tabedAch .itemedAch{ display: none;}
+.tabedAch .itemedAch .linkAch{width: 529px;background: url(../images/myResume.png) no-repeat #fff;background-position: -294px -118px;padding: 0px 40px;}
+
+.inforAchiev{ padding:0 30px; overflow: hidden;}
+.inforAchiev .inAchiev01{ border-top: 1px dashed #eee; margin-top: -1px; line-height: 34px; padding-bottom: 40px; overflow: hidden;}
+.inforAchiev .inAchiev01 .picInAch{ margin-top: 15px; text-align: center;}
+.inforAchiev .inAchiev01 ul{ font-size: 0;text-align: left;}
+.inforAchiev .inAchiev01 li{ display: inline-block;*display: inline;*zoom:1;}
+.inforAchiev .inAchiev01 li img{width:165px;height: 120px;cursor: pointer;}
+.inforAchiev .inAchiev01 .tilInAch{ color:#aaa; padding-left:25px;}
+.inforAchiev .inAchiev01 .tilInAch .btnBar{float:right;margin-right:0;}
+.inforAchiev .inAchiev01 .tilInAch i{ float:left; cursor: pointer;}
+.inforAchiev .inAchiev01 .tilInAch span{ font-size: 16px; margin-right: 10px; color:#666;}
+.inforAchiev .inAchiev01 .tilInAch em{ color:#999; margin-left: 10px; font-size: 14px;}
+.inforAchiev .inAchiev01 .wordInAch{ font-size: 14px; color:#999; line-height: 22px; padding:0 25px;white-space: pre-wrap;word-wrap: break-word;}
+.inforAchiev .inAchiev01 .linkInAch{width:610px; padding:0 30px; line-height: 70px; background: #f95659; color:#fff; font-size: 20px; margin:15px auto 0;cursor: pointer;}
+.inforAchiev .inAchiev01 .linkInAch a,.inforAchiev .inAchiev01 .linkInAch a:hover {color:#FFF;}
+
+/*涓汉璇勪环*/
+.evalue-mr{ margin-top: 30px;}
+.inforEvalue .textArea{ padding:20px 60px 40px; color:#999; line-height: 20px; text-indent: 2em;cursor:pointer;white-space: pre-line;word-wrap: break-word;}
+
+/*娣诲姞鏇村*/
+.addMore-mr{ margin-top: 20px; padding-bottom: 60px; overflow: hidden;}
+.itemAddMore ul{ width: 596px; margin:0 auto;}
+.itemAddMore ul li{ width:103px; height: 103px;float:left; text-align: center; margin:0 23px; line-height: 22px; position: relative; font-size: 16px; cursor: pointer; margin-top: 25px; display:table; vertical-align: middle;}
+.itemAddMore ul li i.i-addRed{ position: absolute; left:0; top:2px;*top:0;filter:alpha(opacity=0);opacity: 0; transition:.8s;}
+.itemAddMore ul li:hover i.i-addRed{filter:alpha(opacity=100);opacity: 1;}
+
+/*鏃ユ湡閫夋嫨鎺т欢鏍峰紡淇*/
+.calender {width: 268px!important;}
+.calender .other, .calender .getyear {padding: 0px 0px!important;margin: -2px 0 0 0px!important;}
+.getyear .ipt-child {background: #f5f5f5;}
+
+.ico-intxt {position: absolute;right: 10px;top: 18px;}
+
+/*缂栬緫鐩稿叧*/
+.editBase,.editWork,.editEdu,.editInten,.editProject,.editTrain,.editSpecial,.editLang,.editCert,.editAchiev,.editEvalue,.firstAdd {display: none;}
+.addModBtn{display: block;}
+/*缂栬緫鐩稿叧*/
+.project-mr,.train-mr,.special-mr,.lang-mr,.cert-mr,.achiev-mr,.evalue-mr{display: none;}
+
+#abroadYearsDiv,#otherLang {display: none;}
+
+
+/*鏂囦欢涓婁紶缂╃暐鍥�*/
+.fileList{padding-left:2px;padding-top:2px;}
+.file-item{position:relative;width:150px;height: 150px;background:#5d5d5d;border:2px solid #fff;float: left;overflow: hidden;margin-left:-2px;margin-top:-2px;}
+.file-item img{width: 150px;height: 150px;}
+.filePicker2{display:none;width:150px;height: 150px;float: left;}
+.file-item .error{position: absolute;left:0;bottom: 0;width:100%;font-size:12px;background:#f43838;color:#fff;}
+.file-item .closeImg{background: url(../images/myResume.png) no-repeat;vertical-align: middle;width: 15px;height: 15px;background-position: -38px -25px;position: absolute;right:0;top:0;cursor: pointer;}
+.ctInfor .btnBar {float:right!important;}
+.ctInfor .btnBar {float:right!important;}
+
+/*鏇村鎸夐挳*/
+.more-menu {float: right;width: 114px;height: 114px;border-left: 1px dashed #eee;text-align: center;line-height: 44px;color: #999;cursor: pointer;position: relative;z-index: 1;}
+.more-myResume.on {color:#F95659;}
+.more-menu-list {display:none;z-index: 2;position: absolute;bottom: -65px;height: 72px;left: -53px;border: 2px solid #DDD;background: #FFF;}
+.more-menu-list.les {width: 146px;left: -19px;}
+.trTop {position:absolute;top:-21px;left: 96px;;display:block;height:0;width:0;font-size: 0;line-height: 0;border-color:transparent transparent #DDD transparent;border-style:dashed dashed solid dashed;border-width:10px;}
+.more-menu-list.les .trTop {left:63px;}
+.more-menu-list li {float: left;width: 72px;height: 72px;text-align: center;line-height: 33px;color: #999;cursor: pointer;}
+.more-menu-list li:hover {background: #f4f4f4;}
+.more-menu-list li.bl {border-left:1px solid #e7e7e7;}
+.more-menu-list li i {display: block!important;margin: 15px auto 0;}
+
+.top-myResume .reFresh-myResume{ float:right; width:114px; height: 114px; border-left:1px dashed #eee; text-align: center; line-height: 44px; color:#999; cursor: pointer;}
+.top-myResume .reFresh-myResume i.m-icon{ display: block; margin:28px auto 0;}
+
+/*瀵煎嚭绠�鍘嗗脊绐�*/
+.exppop-info {width: 400px;position: fixed;top: 24%; left:50%;margin-left: -209px;z-index: 1002;transition: all 300ms ease;-webkit-transition: all 300ms ease; border:7px solid #4a4a4a;overflow: hidden; }
+.exppop-info .exppop-body {margin: 0 auto;background:#fff;position: relative;width:100%;font-size: 16px;color:#777;overflow: hidden;}
+i.expIcon{display: inline-block; width:53px; height: 51px; background: url(../images/resumeExport.png) no-repeat;vertical-align: middle;}
+
+i.doc{background-position: 0 0;}
+i.doc:hover{background-position: 0 -66px;}
+i.html{background-position: -60px 0;}
+i.html:hover{background-position: -60px -66px;}
+.DocType{display: inline-block;width: 70px;font-size:14px;text-align: center;padding-top:10px;padding-bottom: 26px;color: #999999;margin-left: 96px;margin-right: 67px;cursor: pointer;}
+.HtmlType{display: inline-block;width: 80px;font-size:14px;text-align: center;padding-top:10px;padding-bottom: 26px;color: #999999;cursor: pointer;}
+.expTitle{font-size: 16px;font-weight: bold;color: #777777;text-align: center;margin:20px 0;}
+
+.exppop-info.roseSkin {width:400px;position: fixed;top: 24%; left:50%; margin-left:-200px;z-index: 1002;transition: all 300ms ease;-webkit-transition: all 300ms ease; border:7px solid #4a4a4a;overflow: hidden; }
+.exppop-info.roseSkin .pop-title { height:40px; line-height: 40px; padding:0 10px 0 20px; background:#f85659; font-size:18px; color:#fff; font-weight:bold;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0;}
+
+.exppop-info.roseSkin .pop-title .close{ float:right; cursor: pointer;}
+.exppop-info.roseSkin .pop-title .close i.c-icon{ display: block; width:14px; height: 14px; background: url(../img/pop.png) no-repeat; margin-top: 18px;}
+.exppop-info.roseSkin .pop-title .close i.close-pop{ background-position: 0 -20px;margin: 0;}
+
+.setDefaultnotice {width: 223px;padding: 7px;background: #b2b2b2;background: rgba(0,0,0,.5);overflow: hidden;position: absolute;left: -30px;top: 35px;z-index: 2;display: none;}
+.setDefaultnotice div {width: 193px;padding: 15px;line-height: 22px;font-size: 15px;background: #fff;text-align: left;}
+.setDefaultnotice span {color:#F95F61;}
+.bar-myResume .onOff:hover .setDefaultnotice {display: block;}
+
+.bigImgWrap{position: fixed;width:100%;height: 100%;left:0;top:0;z-index: 1000;}
+#bigImg{width:520px;height: 420px;position: fixed;left:50%;top:50%;margin-left:-260px;margin-top:-210px;background: rgba(0,0,0,0.2);padding: 5px;z-index: 1002;}
+#bigImg img{display: block;width:100%;height: 100%;}
+#bigImg  .bigImgClose{width:28px;height:28px;background: url(../img/close.png) no-repeat center center;overflow: hidden;position: absolute; right: 15px;top:15px;}

@@ -1,0 +1,61 @@
+/*common css*/
+a{ color:#666;}
+a:hover{ color:#f85659;}
+h1,h2,h3,h4,h5,h6{font-family: 寰蒋闆呴粦,"Microsoft YaHei" ! important;}
+
+.box-progress{width:769px; margin:0 auto; background:#fff; overflow: hidden;}
+.box-progress .til-progress{ font-size: 17px; line-height: 38px; border-bottom: 1px solid #eee; padding-left: 36px; overflow: hidden;}
+
+.tab-progress{ height: 36px; padding-top: 24px; background: #eee; border-bottom: 1px solid #ccc;}
+.tab-progress li{ padding:0 15px; height: 36px; line-height: 36px; float:left; margin-left: 16px; font-size: 16px; border:1px solid transparent; border-bottom: none;position: relative; cursor: pointer;}
+.tab-progress li:hover,.tab-progress li.on{ background: #fff; border:1px solid #ccc; border-bottom: none; border-top-left-radius: 3px;border-top-right-radius: 3px; font-weight: bold;color:#f95659;}
+
+.con-progress{ clear: both; overflow: hidden;}
+.con-progress>div{ display: none;}
+.con-progress>div.on{ display: block;}
+/*绠�鍘嗚鍏虫敞*/
+.item{ height: 85px; padding:15px 17px 0 34px; border-top:1px solid #eee; margin-top: -1px;overflow: hidden;}
+.item .lf-all p.name{ width:336px; overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.item .lf-all p a{ line-height: 34px; font-size: 16px;}
+.item .lf-all p.detail{ line-height: 20px; font-size: 14px;color:#999;}
+.item .lf-all p.detail em{ margin-right:15px;}
+.item .rt-all{ text-align: right;}
+.item .rt-all .time{ color:#999;margin-right: 8px;}
+.item .rt-all .rmName{ float:left; font-size: 14px; line-height: 22px;}
+
+.noItem{ padding:60px 0 110px; font-size: 16px; color:#999; line-height: 36px; text-align: center; overflow: hidden; display: none;}
+.noItem img{ display: block; margin:10px auto;}
+.noItem a.link{ display: inline-block; font-size: 16px; line-height: 40px; font-weight: bold;color:#fff; background: #f85659; padding:0 30px; border-radius: 3px; margin-top: 15px;}
+
+/*缈婚〉鏍峰紡*/
+.pageList { height:30px;padding:30px 5px 5px; text-align: center;margin:0 auto; background: #f8f8f8; overflow: hidden; display: block;}
+.pageList a {border: #e5e5e5 1px solid; padding:4px 9px; margin: 4px; color: #666;text-decoration: none;background:#FFF;}
+.pageList a:hover {border: #999 1px solid; color: #FFF;background:#036cb4;}
+.pageList a:active {border: #999 1px solid; color: #FFF;background:#036cb4;}
+.pageList .current {border: #036cb4 1px solid;padding: 4px 9px;font-weight: bold;margin: 4px;color: #fff;background-color: #036cb4;}
+.pageList .disabled {border: #eee 1px solid; padding:4px 9px; margin: 2px; color: #ddd;}
+
+/*鎶曢�掕繘灞�*/
+.itemDev{ height: 85px; padding:15px 17px 0 34px; border-top:1px solid #eee; margin-top: -1px;overflow: hidden;}
+.itemDev .lf-all{width:340px; float:left; margin-right: 10px;}
+.itemDev .lf-all p.name{ width:330px;}
+.itemDev .lf-all p.name a{ float:left;max-width: 160px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.itemDev .lf-all p.name span{ float:left; line-height: 34px;}
+.itemDev .lf-all p a{ line-height: 34px; font-size: 16px;}
+.itemDev .lf-all p.detail{ clear: both; line-height: 20px; font-size: 14px;color:#999;}
+.itemDev .lf-all p span{ color:#f95659;}
+.itemDev .ct-all{ float:left;line-height: 34px; font-size: 16px; }
+.itemDev .ct-all p{ width:340px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.itemDev .ct-all a{color:#999;}
+.itemDev .rt-all{ clear: both; text-align: right;*margin-top:-10px;}
+.itemDev .rt-all .time{ color:#999;margin-right: 8px;}
+
+.bindWx {background: #fff8e5;padding: 8px;position: relative;margin-bottom: 10px;}
+.bwClose {position: absolute;right: 8px;top: 8px;color: #a5a4a2;cursor: pointer;}
+.bwIco {background:url(../images/personal.png) no-repeat;background-position: 0 -168px;width: 34px;height: 46px;margin-left: 15px;float:left;}
+.bwTitle {color:#666;font-size: 16px;font-weight: bold;}
+.bwDes {color:#999;margin-top: 8px;}
+.bwDes a {color:#0168b7;}
+.bwDes a:hover {text-decoration: underline;}
+.bwBtn {background: #f85659;text-align: center;color:#FFF;line-height:32px;height: 32px;width:100px;border-radius: 3px;-webkit-border-radius:3px;-moz-border-radius:3px;float:right;margin-right: 26px;margin-top: 8px;cursor: pointer;}
+.bwCont {margin-left: 18px;float:left;}

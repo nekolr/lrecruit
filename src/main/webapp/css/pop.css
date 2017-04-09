@@ -1,0 +1,253 @@
+
+.pop {
+    width: 504px;
+    border: solid 8px #616161;
+    position: fixed;
+    display: none;
+    z-index: 9999;
+}
+
+.popTitle {
+    text-indent: 25px;
+    width: 100%;
+    height: 40px;
+    background-color: #f85659;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+}
+
+.popTitle   a {
+    text-indent: 5px;
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    float: right;
+    text-decoration: none;
+}
+
+.popTitle   a:active {
+    font-size: 20px;
+}
+
+.shield {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    display: none;
+    z-index: 1001;
+}
+
+.popContent {
+    width: 100%;
+    background-color: white;
+    padding-top: 1px;
+}
+
+.popBtn {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    background-color: white;
+    text-align: center;
+}
+.popBtn a {
+    font-size:16px;
+}
+
+.popBtn .confirmBtn, .popBtn .cancelBtn {
+    display: inline-block;
+    width: 78px;
+    height: 34px;
+    line-height: 34px;
+    margin: auto 10px;
+}
+
+.popBtn .confirmBtn {
+    background-color: #f85659;
+    color: white;
+    border: 1px solid #f85659;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.popBtn .cancelBtn {
+    background-color: white;
+    color: #999999;
+    border: 1px solid #999999;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.popTitle>a:hover {
+    color: #d7d7d7;
+}
+
+.popBtn .confirmBtn:active, .popBtn .cancelBtn:active {
+    text-decoration: underline;
+}
+
+.msgTitle {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+}
+.msgTitleMail{
+    width: 350px;
+    text-align: center;
+    font-size: 16px;
+    margin:30px auto 10px auto;
+    line-height: 30px;
+}
+.popCenterArea {
+
+    width: 360px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.popCenterArea   input {
+    display: block;
+    outline-style: none;
+    background-color: #f5f5f5;
+    color: #999999;
+    font: 14px/24px Microsoft YaHei, Helvetica, Tahoma;
+    text-indent: 15px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+}
+/*.popCenterArea .phone{*/
+/*position: relative;*/
+/*}*/
+
+.popCenterArea .inputNum {
+    width: 100%;
+}
+
+.pwd .inputNum{
+    margin-top:10px;
+}
+.pwd .inputNum:first-child{
+    margin-top:30px;
+}
+
+.popCenterArea .inputIde {
+    display: inline-block;
+    width: 242px;
+    margin-top: 12px;
+    *margin-left:-15px;
+}
+
+.popCenterArea .getIdeCode {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    background-color: #dee0e3;
+    color: #ffffff;
+    border-radius: 2px;
+    line-height: 34px;
+    text-align: center;
+    float: right;
+    margin-top: 16px;
+    *margin-top: -38px;
+
+}
+.popCenterArea .getIdeCodeActive{
+    background-color: #465364;
+    cursor: pointer;
+
+}
+
+.popCenterArea .getIdeCodeActive:active{
+    cursor: pointer;
+    color: grey;
+}
+
+.popCenterArea .tip{
+    color:#ff0000 ;
+    font-size: 12px;
+    height: 16px;
+    margin: 4px 0;
+}
+.popCenterArea .tip>a{
+    color: #433cff;
+}
+.popCenterArea .wrong{
+    position: absolute;
+    top:85px;
+    left: 260px;
+}
+.popCenterArea .successArea{
+    background-color: black;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    color: white;
+    margin: auto;
+    width: 320px;
+    height: 70px;
+    position: absolute;
+    top: 0; left: 0;  right: 0;
+    text-align: center;
+    border-radius: 2px;
+    z-index: 1000;
+}
+.popCenterArea .successArea .sucTitle{
+    margin-top: 7px;
+    font-size: 18px;
+    line-height:30px ;
+}
+.popCenterArea .successArea  .sucAddtion{
+    font-size: 14px;
+    line-height:30px ;
+}
+.popCenterArea .deleteTip{
+    line-height:30px ;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #494949;
+}
+.popCenterArea .unbind .contentMsg{
+    font-size: 18px;
+    color:#494949 ;
+    width:100%;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+}
+.popCenterArea .pwd{
+    position: relative;
+}
+.popCenterArea .pwd .eye{
+    background: url(../images/login_icon.png) no-repeat;
+    width: 16px;
+    height: 20px;
+    background-position: -31px -49px;
+    position: absolute;
+    cursor: pointer;
+}
+.popCenterArea .pwd .old{
+    position: absolute;
+    top: 13px;
+    left: 334px;
+}
+.popCenterArea .pwd .new{
+    position: absolute;
+    top: 82px;
+    left: 334px;
+
+}

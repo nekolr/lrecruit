@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.LogDao">
+	<insert id="addLog" parameterType="edu.tsu.lulin.entity.Log">
+		<selectKey resultType="Long" order="BEFORE" keyProperty="logid">
+			select seq_log_id.nextval from dual
+		</selectKey>
+		insert into log (logid,account,ip,logintime,logoutime) values(
+			#{logid,jdbcType=NUMERIC},
+			#{account,jdbcType=VARCHAR},
+			#{ip,jdbcType=VARCHAR},
+			#{logintime,jdbcType=DATE},
+			#{logoutime,jdbcType=DATE}
+		)
+	</insert>
+</mapper>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.JobDao">
+	<insert id="addJob" parameterType="edu.tsu.lulin.entity.Job">
+		<selectKey resultType="Long" order="BEFORE" keyProperty="jobid">
+			select SEQ_JOB_ID.nextval from dual
+		</selectKey>
+		insert into job (jobid,entpid,positionid,jobname,jobnature,minsal,maxsal,experience,edu,address,mark,contact,phone,email,status,deptname,posttime) values (
+			#{jobid,jdbcType=NUMERIC},
+			#{entpid,jdbcType=NUMERIC},
+			#{positionid,jdbcType=NUMERIC},
+			#{jobname,jdbcType=VARCHAR},
+			#{jobnature,jdbcType=NUMERIC},
+			#{minsal,jdbcType=NUMERIC},
+			#{maxsal,jdbcType=NUMERIC},
+			#{experience,jdbcType=NUMERIC},
+			#{edu,jdbcType=NUMERIC},
+			#{address,jdbcType=VARCHAR},
+			#{mark,jdbcType=VARCHAR},
+			#{contact,jdbcType=VARCHAR},
+			#{phone,jdbcType=VARCHAR},
+			#{email,jdbcType=VARCHAR},
+			#{status,jdbcType=NUMERIC},
+			#{deptname,jdbcType=VARCHAR},
+			#{posttime,jdbcType=VARCHAR}
+		)
+	</insert>
+	<select id="findAll" resultType="edu.tsu.lulin.entity.Job">
+		select * from job
+	</select>
+	<select id="findByEntpid" parameterType="Long" resultType="edu.tsu.lulin.entity.Job">
+		select * from job where entpid = #{entpid}
+	</select>
+	<select id="findById" parameterType="Long" resultType="edu.tsu.lulin.entity.Job">
+		select * from job where jobid = #{jobid}
+	</select>
+	<select id="findByNum" resultType="edu.tsu.lulin.entity.Job">
+		select * from job where <![CDATA[rownum <= #{num} and entpid = #{entpid} and status = #{status}]]>
+	</select>
+	<select id="findByEntpidAndStatus" resultType="edu.tsu.lulin.entity.Job">
+		select * from job where entpid = #{entpid} and status = #{status}
+	</select>
+	<select id="findByConditionPaging" resultType="edu.tsu.lulin.entity.Job">
+		<if test="tradeid!=-1">
+			with cte(tradeid,tradename,parentid,ispn) as
+			(select * from trade where tradeid = #{tradeid}
+			union all
+			select k.tradeid,k.tradename,k.parentid,k.ispn from trade k
+			inner join cte c
+			on c.tradeid = k.parentid)
+		</if>
+		select job.* from job inner join position on position.positionid = job.positionid inner join entp on job.entpid = entp.entpid
+		<if test="tradeid!=-1">
+			inner join cte on cte.tradeid = position.tradeid
+		</if>
+		<where>
+			<if test="entpnature!=-1">
+				and entp.entpnature = #{entpnature}
+			</if>
+			<if test="job.minsal!=null and job.maxsal!=null">
+				<![CDATA[and job.minsal >= #{job.minsal} and job.maxsal <= #{job.maxsal}]]>
+			</if>
+			<if test="job.minsal==null and job.maxsal!=null">
+				<![CDATA[and job.maxsal <= #{job.maxsal}]]>
+			</if>
+			<if test="job.minsal!=null and job.maxsal==null">
+				<![CDATA[and job.minsal >= #{job.minsal}]]>
+			</if>				
+			<if test="job.experience!=-1">
+				and job.experience = #{job.experience}
+			</if>
+			<if test="job.edu!=-1">
+				and job.edu = #{job.edu}
+			</if>
+			<if test="job.jobname!=null">
+				and LOWER(job.jobname) like '%'||#{job.jobname}||'%'
+			</if>
+			and job.status = 1 order by jobid
+		</where>
+	</select>
+	<select id="findByConditionPagingAjax" resultType="java.lang.String">
+		select job.jobname from job inner join position on position.positionid = job.positionid inner join entp on job.entpid = entp.entpid
+		<where>
+			<if test="tradeid!=-1">
+				and position.tradeid = #{tradeid}
+			</if>
+			<if test="entpnature!=-1">
+				and entp.entpnature = #{entpnature}
+			</if>
+			<if test="job.minsal!=null and job.maxsal!=null">
+				<![CDATA[and job.minsal >= #{job.minsal} and job.maxsal <= #{job.maxsal}]]>
+			</if>
+			<if test="job.minsal==null and job.maxsal!=null">
+				<![CDATA[and job.maxsal <= #{job.maxsal}]]>
+			</if>
+			<if test="job.minsal!=null and job.maxsal==null">
+				<![CDATA[and job.minsal >= #{job.minsal}]]>
+			</if>				
+			<if test="job.experience!=-1">
+				and job.experience = #{job.experience}
+			</if>
+			<if test="job.edu!=-1">
+				and job.edu = #{job.edu}
+			</if>
+			<if test="job.jobname!=null">
+				and LOWER(job.jobname) like '%'||#{job.jobname}||'%'
+			</if>
+			and job.status = 1 order by jobid
+		</where>
+	</select>
+</mapper>

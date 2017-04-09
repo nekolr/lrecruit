@@ -1,0 +1,356 @@
+.main .account{background:#f8f8f8}
+.vhide{visibility:hidden}
+.pointer{cursor:pointer}
+.leftCont{float:left;width:220px;}
+.rightCont{float:right;width:790px;height:500px;background:#FFF}
+.pageTitle{line-height:46px;border-bottom:1px solid #eee}
+.account .t1{padding-left:23px;color:#777;font-size:20px;font-weight:700}
+.account .t2{display:inline-block;line-height:36px;font-size:18px;color:#777;font-weight:700;padding:0 15px;background:#f8f8f8}
+.notice{float:right;margin-right:23px;line-height:46px;color:#aaa}
+.account em.tag{color:red;margin-right:4px}
+.account .tip{font-size:16px;color:#f85659;line-height:72px}
+.pageCont{display:none}
+.pageCont.on{display:block}
+.row-pos{min-height:42px;padding:10px 0;clear:both}
+.main .row-pos .caption{font-size:16px;}
+.logo-add{position:relative;width:162px;height:98px;background:#f8fdff;border:1px dashed #a2c2d1;text-align:center;line-height:26px;color:#a2c2d1;overflow:hidden}
+.logo-add.on{border:none}
+.logo-add span{display:inline-block;margin-top:20px}
+#logoTxt{display:block;width:100%;position:absolute;left:0;top:0;text-align:center}
+.main .padd5px{line-height:40px;padding:5px 0}
+.main .ml135{margin-left:135px}
+.fb{font-size:16px;font-weight:700}
+.cgray{color:#aaa}
+.cred{color:#ff4242}
+.main .c-icon{display:inline-block;background:url(../images/icon-jobPost.png) no-repeat;vertical-align:middle}
+.main .c-icon.add{width:15px;height:15px;background-position:0 -81px;margin-right:6px;margin-top:-3px}
+.selc-child{float:left;background:#FFF;margin-right:10px;position:relative;margin-bottom:10px}
+.main .selc-child span{height:40px;width:361px;line-height:40px;border:1px solid #ddd;font-size:16px;color:#555}
+input,select,textarea{margin:0;padding:0;background:0 0;border:none;display:inline-block;font-size:0;line-height:0;vertical-align:top;font-size:16px;height:40px;line-height:40px;border:1px solid #ddd;background:#fff;font-size:16px}
+.main input.txt{padding:0 10px;width:378px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.main .selc-child span i{top:17px;right:9px}
+/*.main .selc-child input.txt{padding:0;width:100%;border:none}*/
+.main .btn-jobPost .btn,.sendSource .btn,.topTipBtn .btn,.valW .btn{border:none;display:inline-block;height:38px;line-height:38px;padding:0 23px;background:#f85659;border-radius:2px;color:#fff;font-size:16px;font-weight:700;margin:0 10px}
+.sendSource .btn{padding:0 10px;margin:0;height:30px;line-height:30px;cursor:pointer;    font-size: 14px;font-weight: bold}
+.main .btn-jobPost .btn.white,.topTipBtn .btn.white{background:#fff;border:1px solid #aaa;height:36px;line-height:36px;padding:0 15px;color:#999}
+.topTipBtn .btn,.topTipBtn .btn.white{height:32px;line-height:32px;cursor:pointer}
+.main .selc-child ul li{font-size:16px;line-height:32px}
+.main .selc-child ul{z-index:1}
+.account .errtip{font-size:12px;line-height:18px;color:red;margin-top:5px}
+.account .space{height:20px;background:#f8f8f8}
+.accountNav{color:#666;line-height:47px;font-size:16px;overflow:hidden;background:#fff;}
+.infor-basic{padding-left:23px}
+.addProduct{height:40px;overflow:hidden;color:#0068b7;cursor:pointer;position:relative}
+.infor-basic .con-basic .city{width:118px;margin-right:9px}
+.infor-basic .con-basic .address{width:226px}
+.main .box-describe{float:left}
+.main .box-describe span{color:#aaa;line-height:40px}
+.main .box-describe .wrap-textarea{position:relative;margin-bottom:5px;overflow:hidden}
+.main .box-describe .num-word{font-size:16px;color:#aaa;height:45px;line-height:45px;position:absolute;right:15px;bottom:5px}
+.main .box-describe .num-word span{color:red}
+.main .box-describe .describe{padding:0 10px;width:568px;height:275px;font-size:16px}
+.infor-basic .con-basic .describe-pos .infor-com{height:218px}
+.main .btn-jobPost{clear:both;height:38px;line-height:38px;padding:16px 0 22px;background:#f2f2f2;overflow:hidden;text-align:center}
+#industry.selc-child,#jobs.selc-child{width:361px;height:40px;border:1px solid #ddd;line-height:40px;padding:0 27px 0 10px;cursor:pointer;display:block;white-space:nowrap;text-overflow:ellipsis;font-size:16px;color:#555;margin-bottom:0}
+.main input.noBor{padding:0;border:0}
+#industry.selc-child span,#jobs.selc-child span{border:none;position:static;padding:0;margin:0}
+.intErr{font-size:12px;color:red;clear:both;line-height:16px;margin-left:135px;padding-top:5px}
+.cpCityWrap{margin-right:9px;float:left;width:140px;position:relative;height:40px;line-height:40px;cursor:pointer}
+.cpCityWrap .cpCity{padding:0 10px;border:1px solid #ddd;font-size:16px}
+.cpCityWrap .ar-dn{position:absolute;right:9px;top:17px}
+.pl38{padding-left:38px}
+.pb10{padding-bottom:38px}
+.icon-ac{display:inline-block;background-image:url(../images/account.png);background-repeat:no-repeat;vertical-align:middle}
+.ac-person{background-position:0 0;width:40px;height:40px;margin-right:10px}
+.ac-phone{background-position:0 -50px;width:40px;height:40px;margin-right:10px}
+.ac-email{background-position:0 -100px;width:40px;height:40px;margin-right:10px}
+.ac-radio{background-position:0 -150px;width:13px;height:13px;margin-top:-3px;margin-right:10px;cursor:pointer}
+.ac-radio.on{background-position:-27px -150px}
+.ac-check{background-position:0 -187px;width:13px;height:13px;margin-top:-3px;margin-right:10px;cursor:pointer}
+.ac-check.on{background-position:-27px -187px}
+/*.ac-check{background:url(../img/icon-jobPost.png) no-repeat;background-position:0 -62px;width:13px;height:13px;margin-top:-3px;margin-right:10px;cursor:pointer}
+.ac-check.on{background-position:-20px -62px}*/
+.baseInfo .companyName{padding-left:38px;line-height:80px;font-size:16px;color:#333}
+.baseInfo .companyName .btn{padding-left:20px;color:#0068b7;text-decoration:underline;font-size:14px;cursor:pointer}
+.baseInfo .userInfo{padding-left:38px;padding-bottom:30px}
+.baseInfo .userInfo li{float:left;padding-right:10px;width:230px;line-height:40px;overflow:hidden}
+.baseInfo .userInfo li .userTxt{float:left;max-width:135px;overflow:hidden;text-overflow:ellipsis}
+.baseInfo .userInfo li .icon-ac{float:left}
+.baseInfo .userInfo li .btn{padding-left:12px;cursor:pointer;color:#0068b7;text-decoration:underline}
+.row-base{margin-top:15px}
+.row-base .caption{float:left;width:100px;margin-right:10px;line-height:40px;text-align:left;font-weight:700}
+.row-base .caption a{color:#0068b7;font-weight: normal;/*text-decoration: underline;*/}
+.row-base .rule{float:left}
+.row-base .rule .node{margin-left:25px;color:#AAA}
+.row-base .rule li{line-height:36px}
+.row-base .sourceWrap{float:left}
+.row-base .source{margin-bottom:20px;width:618px;overflow:hidden;border:1px solid #eee;line-height:40px}
+.row-base .sourceTitle{background:#fafafa}
+.row-base .sourceTitle strong{font-weight:400;}
+.row-base .sourceTitle .w1{float:left;padding-left:20px;padding-right:30px}
+.row-base .source ul{overflow:hidden}
+.row-base .source ul li{border-top:1px solid #eee;height:40px;overflow:hidden;clear:both}
+.row-base .source ul .e1{float:left;width:20%}
+.row-base .source ul .e1 span{padding-left:25px}
+.row-base .source ul .e1 b{padding-left:25px}
+.row-base .source ul .e2{float:left;width:20%}
+.row-base .source ul .e3{float:left;width:20%}
+.row-base .source ul .e4{float:left;width:20%}
+.row-base .source ul .e5{float:left;width:20%;overflow:hidden}
+.row-base .source ul .e5 span{display:inline-block;width:90%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.accountW{padding:50px 0 80px 150px}
+.m15px{margin-top:15px}
+.row-acc .caption{float:left;width:100px;margin-right:30px;line-height:40px;text-align:left;font-size:16px}
+.main .accountM input.txt{width:328px}
+#img_txt,#smsTxt{width:143px;float:left;margin-right:20px}
+.row-right{float:left;margin-bottom:26px}
+.row-acc .img_btn,.row-acc .sms_btn{float:left;margin:4px 0;width:100px;height:34px}
+.row-acc .img_btn .imgCode,.row-acc .sms_btn .smsCode{height:34px;line-height:34px;background:#dee0e3;text-align:center;color:#fff}
+.row-acc .img_btn .imgCode.on,.row-acc .sms_btn .smsCode.on{background:#465364;cursor:pointer}
+.row-acc .mPassport{color:#0068b7;cursor:pointer}
+.row-acc .node{margin-top:15px;color:#999}
+.row-acc .node span{color:#f85659}
+.row-suba .caption{float:left;width:100px;margin-right:20px;line-height:40px;text-align:left;font-size:16px}
+.subaccountM .subaccountW{padding:20px 0 20px 20px}
+.main .subaccountM input.txt{width:258px}
+.subaccountM .row-suba{line-height:40px;margin-bottom:10px}
+.row-suba .inputWrap{float:left}
+.row-suba .node{float:left;margin-left:15px;color:#bdbdbd}
+.row-suba .acountType span{padding-right:20px}
+.row-suba .acountType i{margin-right:5px}
+.accountTree .tabNavs{padding-top:20px;padding-left:20px;border-bottom:1px solid #ccc;cursor:pointer}
+.accountTree .tabNav.on{border:1px solid #ccc;border-bottom:none;color:#f85659;font-weight:700;position:relative;top:1px;background:#FFF}
+.accountTree .tabNav{float:left;padding:0 15px;line-height:34px;border:1px solid #fff;border-bottom:none;font-size:16px}
+.accountTree .tabConts{padding:20px}
+.accountTree .tabCont{display:none}
+.accountTree .tabCont.on{display:block}
+.accountTree .emptyTip{display:none}
+.row-rt .caption{float:left;width:40px;margin-right:20px;line-height:40px;text-align:left;font-size:16px}
+.rightM .rightW{padding:20px 0 20px 20px}
+.main .rightM input.txt{width:313px}
+.rightM .row-rt{line-height:40px;margin-bottom:10px}
+.row-rt .inputWrap{float:left}
+.row-rt .node{float:left;margin-left:15px;color:#bdbdbd}
+.row-rt .rightList .node{font-size:12px}
+.row-rt .rightItem{float:left}
+.row-sc .caption{float:left;width:40px;margin-right:20px;line-height:40px;text-align:left;font-size:16px}
+.sourceM .sourceW{padding:20px 0 20px 20px}
+.main .sourceM input.txt{width:313px}
+.sourceM .row-sc{line-height:40px;margin-bottom:10px}
+.row-sc .inputWrap{float:left}
+.row-sc .node{float:left;margin-left:15px;color:#bdbdbd}
+.sendSource .e1{float:left;width:120px}
+.sendSource .e2{float:left;padding-right:13px}
+.main .sendSource input.txt{width:178px;height:30px;line-height: 30px;}
+.sendSource .e3{float:left;padding-right:20px}
+.main .sendSource .e3 input.txt{width:58px}
+.sendSource .e4{float:left;width:190px;padding-right:15px;color: #999999;}
+.sendSource .e5{float:left}
+.sendSource li{padding-bottom:10px}
+.formItem{position:relative}
+.formItem .ar-dn{position:absolute;right:8px;top:15px}
+.recoverSource .e1{float:left;width:120px}
+.recoverSource .e2{float:left;padding-right:40px}
+.recoverSource .e2 .recoverBtn{color:#0267b9;cursor:pointer}
+.recoverSource .e3{float:left}
+.sContract{position:absolute;left:0;top:41px;z-index:100;background:#fff;border:1px solid #ddd;height: 200px;overflow-x:hidden;overflow-y: auto;}
+.sContract table{width:480px;}
+.sContract table th{line-height:34px}
+.sContract table tr{line-height:28px;height:28px}
+.sContract table tr.tableT{color:#999;border-bottom:1px solid #eee}
+.sContract table tr.tableT th{font-weight:700}
+.sContract table tr.tableL:hover{background:#f5f5f5;cursor:pointer}
+.sContract table tr .d1{padding-left:20px;width:100px}
+.sContract table tr .d2{width:70px}
+.sContract table tr .d3{width:110px}
+.sContract table tr .d4{display:inline-block;padding-right:10px;width:95px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sContract table tr .d5{width:75px}
+.topTip{background:#fff8e5;padding:15px}
+.topTip .topTipTxt{width:515px;float:left}
+.topTip .topTipBtn{float:right}
+.allAcounts .userTree li{cursor:text}
+.allAcounts,.myAcounts{position: relative;}
+.tabConts {position: relative;}
+.tabConts .eleTipPop{position: absolute;z-index:2;background: #fff;left:50px; top:36px;height: 20px;line-height: 20px;border:1px solid #999;padding:0 10px; border-radius:3px;font-size: 12px; color:#999;}
+.eleTipPop .red{color:#f85659;}
+.main .w1024.account{background:#f8f8f8}
+.main .account .tag-weal{width:530px}
+.main .account .box-describe .bor-describe{width:520px}
+.three-changeCom .logo-changeCom .img-changeCom{width:162px;height:98px;border:1px dashed #a2c2d1;overflow:hidden;position:relative}
+.three-changeCom .img-changeCom{line-height:40px;color:#aaa}
+.three-changeCom .logo-changeCom .img-changeCom i{position:absolute;right:7px;top:7px;cursor:pointer}
+.three-changeCom .logo-changeCom .img-changeCom img{display:inline;margin:0 auto;vertical-align:middle}
+.three-changeCom .logo-changeCom .img-changeCom span{height:100%;display:inline-block;vertical-align:middle}
+.three-changeCom .logo-changeCom .changeLogo{height:30px;line-height:30px}
+.three-changeCom .logo-changeCom{line-height:40px;color:#aaa}
+#upload{-zoom:1;clear:both}
+#upload:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+#upload li{position:relative;float:left;display:inline-block;width:165px;height:134px;margin:0 10px 10px 0}
+#upload li .img-close{position:absolute;right:7px;top:7px;cursor:pointer}
+.main .company-pos .box-describe .bor-describe{height:173px}
+.main .company-pos .box-describe .infor-com{height:173px;width:500px}
+.main .account .box-describe.product-pos .bor-describe{float:left;height:93px;margin-right:10px}
+.main .account .box-describe.product-pos .bor-describe .infor-com{height:93px;width:500px}
+.main .box-describe .num-word{width:500px}
+.box-describe .del{display:inline-block;line-height:138px;width:88px}
+.box-describe .del i.hide{display:none}
+.main .box-describe.product-pos .num-word{height:40px;line-height:40px;bottom:0;width:515px;left:1px;padding-right:20px}
+.main .addProduct{ line-height: 20px; color:#aaa; cursor: pointer;position:relative}
+.main .addProduct input{position:absolute;left:0;top:0;height:20px;opacity:0;filter:alpha(opacity=0)}
+.main .addProduct span.tip-err{ margin-left: 25px; color:#ff0000;}
+.main .addProduct.blue span.add{color:#0068b7;}
+.main .addProduct i.c-icon{margin-left: 0; background-position: -20px -81px;}
+.main .addProduct.blue i.c-icon{background-position: 0 -81px;}
+.main .addProduct.blue i.c-icon.upload{background-position: -80px -81px;}
+.changeCompany .one-changeCom,.changeCompany .two-changeCom,.changeCompany .three-changeCom{padding:0px 0px 0px 10px;overflow: hidden;}
+
+
+/**********优化************/
+.fred{color:#f95458;}
+.fblue{color:#2d8bd5;}
+.showRecordBtn{
+    font-size: 16px;
+    color:blue;
+    cursor: pointer;
+}
+.recordWrap{
+    display: none;
+}
+.pageTitle .closeRecordBtn{
+    float: right;
+    padding-right: 20px;
+    color: #f85659;
+    cursor: pointer;
+}
+.recordWrap .subaccountW{
+    padding:20px;
+    min-height: 400px;
+}
+.recordTitle li{
+    background: #fafafa;
+}
+.recordTitle li:after,.recordList li:after{
+    content: "";display:block;height:0;clear:both;visibility: hidden;
+}
+.recordTitle li,.recordList li{
+    padding-left:10px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.recordTitle .e1, .recordList .e1{
+    float: left;
+    width:150px;
+}
+.recordTitle .e2, .recordList .e2{
+    float: left;
+    width:60px;
+}
+
+.recordTitle .e3, .recordList .e3{
+    float: left;
+    width:300px;
+}
+
+.recordTitle .e4, .recordList .e4{
+    float: left;
+    width:80px;
+}
+
+.recordTitle .e5, .recordList .e5{
+    float: left;
+    width:140px;
+}
+
+/****** 客服电话 **********/
+.leftCont .customPhone{
+    width: 207px;
+    height: 60px;
+    padding-top: 12px;
+    padding-left: 13px;
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 25px;
+}
+.leftCont .customPhone>div {
+    float: left;
+    color: #999;
+    line-height: 24px;
+}
+.main .c-icon.i-phone {
+    width: 42px;
+    height: 44px;
+    background-position: -223px -119px;
+    margin: 2px 11px 0 0;
+}
+.license{
+    position: fixed;
+    top:155px;
+    left:50%;
+    margin-left:537px;
+    width:120px;
+    height: 200px;
+}
+.license img{
+    display: block;
+    margin:0 auto;
+}
+.license .close-license{
+    position: absolute;
+    right:0;
+    top:0;
+    display: inline-block;
+    width:28px;
+    height: 28px;
+    background: url(../img/luck_bottom_close.png) no-repeat center center;
+    cursor: pointer;
+}
+
+/* 修改手机邮箱 */
+.noticeTxt{
+    font-size: 14px;
+    /* margin:0 10px; */
+}
+.noticeTxt.bottom{
+    border-top:1px solid #ccc;
+    margin:10px 0;
+    padding-top:10px;
+}
+.valW .oldPhone{
+    text-align: center;
+    color:#000;
+}
+.valW .oldPhone span{
+    padding:0 5px;
+    font-weight: bold;
+}
+.valW .tipTxt{
+    font-size: 14px;
+    text-align: right;
+    line-height: 40px;
+    height: 40px;
+    margin-right: 20px;
+    width:210px;
+    color:#000;
+}
+.valW .row-pop{
+    width:340px;
+    margin:10px auto 0;
+}
+.valW .btn{
+    width:100px;
+    height: 34px;
+    line-height: 34px;
+    margin:0 0 0 2px;
+    cursor: pointer;
+}
+.valW .btn.un{
+    background: #dee0e3
+}
+.myPop .valW #smsTxt{
+    width:190px;
+}
+
+.accountNav li{ height: 46px; line-height: 46px; border-top:1px solid #eee; margin-top: -1px;}
+.accountNav li a{display: block; height: 46px; font-size: 16px; color:#666; padding-left: 37px;}
+.accountNav li a:hover,.accountNav li.on a{border-left:3px solid #f85659; background: #f4f4f4; font-weight: bold; color:#f85659;}

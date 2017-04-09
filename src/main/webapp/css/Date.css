@@ -1,0 +1,100 @@
+
+.calender{ width:238px;top:0;left:0;border:1px #ddd solid;background:#FFF;position:absolute;display:none;z-index:100;border-radius:2px;-webkit-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;color:#666666;font-size: 12px;}
+.calendertb{width:100%;}
+.calendertb tr th{font-weight:bold;}
+.calendertb tr,.calendertb tr td{height:40px;line-height:40px;}
+.calendertb tr.other{height: 30px;}
+.calendertb td{width:30px;height:25px;text-align:center;vertical-align:middle;cursor:pointer;}
+.calendertb td.un{color:#BFBFBF;}
+.calendertb td.hover,.calendertb td.weekendhover{background:#465364;color:#fff;}
+.calendertb td:hover{background:#D6D6D6;}
+.calendertb th{height:25px;border:0;text-align:center;vertical-align:middle;cursor:pointer;}
+.calendertb tr td.tdtoday{ background:#f5f5f5;cursor:pointer;border-radius: 5px;margin:3px;height: 30px;line-height: 30px;margin:3px;}
+.calender .other,.calender .getyear{ height:30px;line-height:30px;text-align:center;padding:3px 0px;background: #f5f5f5;border-radi s: 5px;margin:3px;}
+.calender .other{color:#465364;font-weight: bold;cursor: pointer;}
+.preMonth{ font-size:14px;cursor:pointer;margin-right:18px;}
+.nextMonth{ font-size:14px;cursor:pointer;margin-left:18px;}
+#year{margin-right:5px;}
+.yearSelectWrap{position:relative;}
+.calender_ys{
+	display: none;
+	height: 152px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:30px;
+	background:#fff;
+	border: 1px solid #C3C3C3;
+	overflow: hidden;
+}
+.calender_ys.on{
+	display: block;
+}
+.yearSelect{
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.yearSelect .icon-ar{
+	position:absolute;
+	right:5px;
+	top:11px;
+}
+.calender_ys li{
+	width:50%;
+	float: left;
+	cursor: pointer;
+}
+.calender_ys li.un{
+	color:#CCCCCC;
+}
+.calender_ys li.on{
+	background: #F1F1F1;
+}
+.calender_ys li:hover{
+	background: #F1F1F1;
+}
+.laydate_ys_list{
+	padding:0 30px;
+}
+.calender_ys_pre{
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-15px;
+	width:30px;
+	height: 30px;
+	cursor: pointer;
+}
+.calender_ys_next{
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-15px;
+	width:30px;
+	height: 30px;
+	cursor: pointer;
+}
+.laydate_ys_list{
+	padding:0 30px;
+}
+.yearSelectWrap .ar-left{
+    background-position: 0 0;
+    width: 7px;
+    height: 14px;
+    margin:11px auto; 
+}
+.yearSelectWrap .ar-right{
+	background-position: 0 -14px;
+    width: 7px;
+    height: 14px;
+    margin:11px auto; 
+}
+
+/*区间模式*/
+.calenderRangeMod {width:520px;background: #FFF;position: absolute;z-index: 1;}
+.calenderRangeMod .dateTo {float:left;width: 40px;height: 164px;text-align: center;position: relative;}
+.calenderRangeMod .dateTo p {position: relative;top: 85px;}
+.calenderRangeMod .calender{position: relative;float:left;}
+.calenderRangeMod .to {float:right;}
+.ysDateTxt {position: absolute;left: 5px;top: 8px;}

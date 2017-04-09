@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.PositionDao">
+	<select id="findPositionsByTradeid" parameterType="Long" resultType="edu.tsu.lulin.entity.Position">
+		select * from position where tradeid = #{tradeid}
+	</select>
+	<select id="findById" parameterType="Long" resultType="edu.tsu.lulin.entity.Position">
+		select * from position where positionid = #{positionid}
+	</select>
+</mapper>

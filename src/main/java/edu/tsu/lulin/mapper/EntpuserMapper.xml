@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.EntpuserDao">
+	<select id="login" parameterType="edu.tsu.lulin.entity.Entpuser" resultType="edu.tsu.lulin.entity.Entpuser">
+		select * from entpuser where entpaccount=#{entpaccount} and entppassword=#{entppassword}
+	</select>
+	<insert id="regist" parameterType="edu.tsu.lulin.entity.Entpuser">
+		<selectKey resultType="Long" order="BEFORE" keyProperty="entpuserid">
+			select seq_entpuser_id.nextval from dual
+		</selectKey>
+		insert into entpuser(entpuserid,entpaccount,entppassword,uuid) values(#{entpuserid,jdbcType=NUMERIC},#{entpaccount,jdbcType=VARCHAR},#{entppassword,jdbcType=VARCHAR},#{uuid,jdbcType=VARCHAR})
+	</insert>
+	<select id="findEntpuserByAccount" parameterType="String" resultType="edu.tsu.lulin.entity.Entpuser">
+		select * from entpuser where entpaccount=#{entpaccount}
+	</select>
+	<update id="editPwd" parameterType="edu.tsu.lulin.entity.Entpuser">
+		update entpuser set entppassword=#{newpassword} where entpuserid=#{entpuserid}
+	</update>
+	<select id="findUUIdById" parameterType="String" resultType="String">
+		select uuid from entpuser where entpuserid=#{entpuserid}
+	</select>
+	<update id="updateEntpemailByUUid" parameterType="edu.tsu.lulin.entity.Entpuser">
+		update entpuser set entpemail=#{entpemail} where uuid=#{uuid}
+	</update>
+	<update id="updateUUIdById" parameterType="edu.tsu.lulin.entity.Entpuser">
+		update entpuser set uuid=#{uuid} where entpuserid=#{entpuserid}
+	</update>
+	<select id="findEntpuserByEmail" parameterType="String" resultType="edu.tsu.lulin.entity.Entpuser">
+		select * from entpuser where entpemail=#{entpemail}
+	</select>
+	<update id="updateEntppassword" parameterType="edu.tsu.lulin.entity.Entpuser">
+		update entpuser set entppassword=#{newpassword} where entpuserid=#{entpuserid} and uuid=#{uuid}
+	</update>
+</mapper>

@@ -1,0 +1,48 @@
+body{ width:100%; height: 100%; background: url(../images/login_bg.jpg) no-repeat top center;}
+
+.wrap-login{ width:650px; min-height: 548px; overflow: hidden;position: absolute; top:-650px; left:50%; margin-left: -325px; }
+.wrap-login i.l-icon{ display: inline-block; background: url(../images/login_icon.png) no-repeat; vertical-align: middle; margin-top: -3px;}
+.wrap-login i.com-icon{width:17px; height: 16px; background-position: 0 0; margin-right: 8px;}
+.wrap-login i.mobile-icon{width:17px; height: 16px; background-position: 0 -26px; margin-right: 8px;}
+.wrap-login i.err-icon{width:12px; height: 12px; background-position: 0 -96px; margin-right: 5px;}
+.wrap-login i.eyeClose-icon{width:16px; height: 20px; background-position: 0 -49px;}
+.wrap-login i.eyeOpen-icon{width:16px; height: 20px; background-position: -31px -49px;}
+.wrap-login i.remeber-icon{width:13px; height: 13px; background-position: 0 -71px; margin-right: 5px;}
+.wrap-login i.onremeber-icon{width:13px; height: 13px; background-position: -32px -71px; margin-right: 5px;}
+.wrap-login i.weixin-icon{width:46px; height: 46px; background-position: 0 -123px; margin-top: 0;}
+.wrap-login i.weixin-icon:hover{background-position:-60px -122px;}
+.wrap-login i.qq-icon{width:46px; height: 46px; background-position: 0 -174px; margin-top: 0;}
+.wrap-login i.qq-icon:hover{background-position:-60px -173px;}
+.wrap-login i.sina-icon{width:46px; height: 46px; background-position: 0 -225px; margin-top: 0;}
+.wrap-login i.sina-icon:hover{background-position:-60px -225px;}
+
+.wrap-login input{ display: block;width:328px; height: 40px; line-height: 40px; background: #f5f5f5; border:1px solid #f5f5f5; padding:0 15px;}
+.top-login{ width:650px; height: 153px; overflow: hidden; position: relative; z-index: 1;}
+.top-login a{ display: block; width:99px; height: 34px; position: absolute; left:36px; top:109px; z-index: 2;}
+
+/*登录*/
+.login{ width:640px; min-height:390px; border:5px solid #e3e3e3; border-top:none; background: #fff;border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; overflow: hidden;}
+.tabs li{ width:50%; float:left; height: 44px; line-height: 44px; border-left:1px solid #eaeaea; border-bottom:1px solid #eaeaea; margin-left: -1px; text-align: center;font-size: 16px;cursor: pointer;}
+.tabs li.on{ border-bottom:1px solid #fff; color:#f85659; }
+.tabs li.on i.com-icon{ background-position: -30px 0;}
+.tabs li.on i.mobile-icon{ background-position: -30px -26px;}
+.tab-login{width:360px; margin:0 auto; padding-top: 12px; overflow: hidden;}
+.tab-login .errtip{font-size: 12px; line-height: 18px; color:#ff0000;}
+
+/*普通登录*/
+.com-tab div.m6px{padding:6px 0;}
+.com-tab .password-com{ width:100%; height: 42px; position: relative;}
+.com-tab .password-com input{ position: absolute; left:0; top:6px;}
+.com-tab .password-com input.password-open{ display: none;}
+.com-tab .password-com i.l-icon{ position: absolute; right:11px; top:24px; cursor: pointer;}
+.com-tab .forget{ height: 32px; line-height: 32px;}
+.com-tab .forget a{ color:#666; text-decoration: underline; float:right;}
+.com-tab .forget a:hover{ color:#f85659;}
+.com-tab .forget p{ color:#999;}
+
+/*登录按钮*/
+.btn{ margin-top: 10px;}
+.btn input{padding:0; border:none;background: #f85659; width:360px; height: 40px; border-radius: 3px; color:#fff; font-size: 20px; font-weight: bold;cursor: pointer;}
+.btn input:hover{background:#fa4144;}
+.on-user{ display: inline-block; line-height: 40px; font-size: 16px; color:#f85659;}
+.on-user:hover{ text-decoration: underline;}

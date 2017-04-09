@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.TradeDao">
+	<select id="findById" parameterType="Long" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where tradeid = #{tradeid}
+	</select>
+	<select id="findByName" parameterType="String" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where tradename = #{tradename}
+	</select>
+	<select id="findByParentid" parameterType="Long" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where parentid = #{parentid}
+	</select>
+	<select id="findByParentidAndISPN" parameterType="Long" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where parentid = #{parentid} and ispn = 1
+	</select>
+	<select id="findByParentidAndNull" parameterType="Long" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where parentid = #{parentid} and ispn is null		
+	</select>
+	<select id="findExistRefPosition" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where parentid = 0 and ispn = 1
+	</select>
+	<select id="findByPositionid" parameterType="Long" resultType="edu.tsu.lulin.entity.Trade">
+		select * from trade where tradeid = (select tradeid from position where positionid=#{positionid})
+	</select>
+</mapper>

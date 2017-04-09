@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.EntpDao">
+	<insert id="addEntp" parameterType="edu.tsu.lulin.entity.Entp">
+		<selectKey resultType="Long" order="BEFORE" keyProperty="entpid">
+			select SEQ_ENTP_ID.nextval from dual
+		</selectKey>
+		insert into entp (entpid,entpuserid,entpname,logo,tradeid,entpnature,entpsize,entpaddress,detailaddress,entpmark) values (
+			#{entpid,jdbcType=NUMERIC},
+			#{entpuserid,jdbcType=NUMERIC},
+			#{entpname,jdbcType=VARCHAR},
+			#{logo,jdbcType=VARCHAR},
+			#{tradeid,jdbcType=NUMERIC},
+			#{entpnature,jdbcType=NUMERIC},
+			#{entpsize,jdbcType=NUMERIC},
+			#{entpaddress,jdbcType=VARCHAR},
+			#{detailaddress,jdbcType=VARCHAR},
+			#{entpmark,jdbcType=VARCHAR}
+		)
+	</insert>
+	<select id="findEntpByEntpuserid" parameterType="String" resultType="edu.tsu.lulin.entity.Entp">
+		select * from entp where entpuserid = #{entpuserid}
+	</select>
+	<update id="updateEntp" parameterType="edu.tsu.lulin.entity.Entp">
+		update entp set 
+			entpname=#{entpname,jdbcType=VARCHAR},
+			<if test="logo!=null and logo !=''">
+			logo=#{logo,jdbcType=VARCHAR},				
+			</if>
+			tradeid=#{tradeid,jdbcType=NUMERIC},
+			entpnature=#{entpnature,jdbcType=NUMERIC},
+			entpsize=#{entpsize,jdbcType=NUMERIC},
+			entpaddress=#{entpaddress,jdbcType=VARCHAR},
+			detailaddress=#{detailaddress,jdbcType=VARCHAR},
+			entpmark=#{entpmark,jdbcType=VARCHAR}
+		where entpid=#{entpid}
+	</update>
+	<select id="findById" parameterType="Long" resultType="edu.tsu.lulin.entity.Entp">
+		select * from entp where entpid = #{entpid}
+	</select>
+</mapper>

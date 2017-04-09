@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.tsu.lulin.dao.CVDao">
+	<update id="updateHead">
+		update cv set head = #{head} where cvid = #{cvid}
+	</update>
+	<select id="findCVByCmuserid" parameterType="Long" resultType="edu.tsu.lulin.entity.Cv">
+		select * from cv where cmuserid = #{cmuserid}
+	</select>
+	<select id="findCVById" parameterType="Long" resultType="edu.tsu.lulin.entity.Cv">
+		select * from cv where cvid = #{cvid}
+	</select>
+	<insert id="createCV" parameterType="edu.tsu.lulin.entity.Cv">
+		<selectKey resultType="Long" order="BEFORE" keyProperty="cvid">
+			select SEQ_CV_ID.nextval from dual
+		</selectKey>
+		insert into cv (cvid,cmuserid) values(
+			#{cvid,jdbcType=NUMERIC},
+			#{cmuserid,jdbcType=NUMERIC}
+		)
+	</insert>
+	<update id="updateCVbase" parameterType="edu.tsu.lulin.entity.Cv">
+			update cv set 
+			<if test="realname != null and realname !=''">
+				realname=#{realname,jdbcType=VARCHAR},
+			</if>
+			<if test="sex != null">
+				sex = #{sex,jdbcType=NUMERIC},
+			</if>
+			<if test="birthday != null and birthday !=''">
+				birthday = #{birthday,jdbcType=VARCHAR},
+			</if>
+			height = #{height,jdbcType=NUMERIC},	
+			weight = #{weight,jdbcType=NUMERIC},
+			<if test="topedu != null">
+				topedu = #{topedu,jdbcType=NUMERIC},	
+			</if>
+			<if test="marry != null">
+				marry = #{marry,jdbcType=NUMERIC},			
+			</if>
+			<if test="drivinglicense != null">
+				drivinglicense = #{drivinglicense,jdbcType=NUMERIC},			
+			</if>
+			<if test="experience != null">
+				experience = #{experience,jdbcType=NUMERIC},		
+			</if>
+			<if test="nowaddress != null and nowaddress !=''">
+				nowaddress = #{nowaddress,jdbcType=VARCHAR},		
+			</if>
+			<if test="phone != null and phone !=''">
+				phone = #{phone,jdbcType=VARCHAR},		
+			</if>
+			<if test="email != null and email !=''">
+				email = #{email,jdbcType=VARCHAR},		
+			</if>
+			usermark = #{usermark,jdbcType=VARCHAR}
+		where cvid = #{cvid,jdbcType=NUMERIC}
+	</update>
+	<update id="updateCVinten" parameterType="edu.tsu.lulin.entity.Cv">
+		<trim suffixOverrides=",">
+			update cv set 
+			jobnature = #{jobnature,jdbcType=NUMERIC},
+			<if test="wantaddress != null and wantaddress !=''">
+				wantaddress = #{wantaddress,jdbcType=VARCHAR},			
+			</if>
+			<if test="positionid != null">
+				positionid = #{positionid,jdbcType=NUMERIC},		
+			</if>
+			enterprisenature = #{enterprisenature,jdbcType=NUMERIC},
+			<if test="sal != null">
+				sal = #{sal,jdbcType=NUMERIC},		
+			</if>
+			<if test="negotiable != null">
+				negotiable = #{negotiable,jdbcType=NUMERIC},
+			</if>
+		</trim>
+		where cvid = #{cvid,jdbcType=NUMERIC}
+	</update>
+	<update id="updateCVSchool" parameterType="edu.tsu.lulin.entity.Cv">
+		<trim suffixOverrides=",">
+			update cv set 			
+			<if test="entertime != null and entertime !=''">
+				entertime = #{entertime,jdbcType=VARCHAR},			
+			</if>
+			<if test="outertime != null and outertime !=''">
+				outertime = #{outertime,jdbcType=VARCHAR},		
+			</if>
+			<if test="school != null and school !=''">
+				school = #{school,jdbcType=VARCHAR},		
+			</if>
+			<if test="major != null and major !=''">
+				major = #{major,jdbcType=VARCHAR},
+			</if>
+			schoolexp = #{schoolexp,jdbcType=VARCHAR},
+		</trim>
+		where cvid = #{cvid,jdbcType=NUMERIC}
+	</update>
+	<update id="updateCVmyself" parameterType="edu.tsu.lulin.entity.Cv">
+		update cv set myself = #{myself,jdbcType=VARCHAR} where cvid = #{cvid,jdbcType=NUMERIC}
+	</update>
+</mapper>

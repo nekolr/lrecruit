@@ -1,0 +1,71 @@
+.job-detail{padding-top:20px;padding-bottom:40px;color:#666;line-height:1;position:relative}
+.job-detail .seo-search-head{padding:0 127px 0}
+.icon-ar{ margin-left: 5px;}
+.hauto{height:auto}
+.mt15{margin-top:15px}
+.gray{color:#999}
+.jpadding{padding:20px 30px 8px}
+.jrpadding{padding:20px 15px}
+.btnJL{display:inline-block;padding:.5em 1em;border:0 none;background-image:none;color:#fff;text-align:center;text-decoration:none;text-shadow:1px 1px rgba(0,0,0,.1);font-size:100%;font-family:inherit;font-weight:inherit;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;user-select:none;overflow:visible;cursor:pointer}
+.job-detail-l{float:left;width:730px;margin-right:14px;}
+.job-detail-l .more{text-align:right}
+.job-detail-l .more a{color:#999}
+.job-detail-l h3{padding-bottom:18px;font-size:18px;font-weight:700;color:#777}
+.job-detail h4 a{font-size:16px;color:#333}
+.job_profile{position:relative;background:#fff}
+.job_profile .base_info{width:510px;overflow:hidden}
+.job_profile .job_name{line-height:36px;display:inline-block;font-size:25px;color:#f85659}
+.job_profile .part{display:inline-block;margin-left:15px;color:#999}
+.job_profile .job_require{margin:15px 0 25px;font-size:16px;width:510px;line-height:1.6;overflow:hidden}
+.job_profile .job_price{font-weight:700;color:#f7484b}
+.job_profile .job_line{color:#e7e7e7;margin:0 10px}
+.job_fit_tags{width:500px}
+.job_fit_tags li{display:inline-block;margin:0 10px 10px 0;width:90px;height:28px;text-align:center;line-height:28px;float:left;background:#eef7fd;color:#7b929f}
+.job_fit_tags .more_tags{display:none}
+.job_fit_tags .s_more{float:right;background:#fff;cursor:pointer}
+.job_profile .updatetime{padding:15px 0 10px 0;color:#999}
+.job_profile .submitJL{position:absolute;top:65px;right:25px;font-size:20px;font-weight:700;border-radius:3px;background:#f85659}
+.job_profile .submitJL:hover{background:#fa4144}
+.mt10{margin-top:10px}
+.job_intro{background:#fff;line-height:36px}
+.job_intro h3{padding-bottom:0}
+.job_intro_tag{color:#999}
+.job_intro_tag .job_line{padding:0 10px}
+.job_intro .job_intro_wrap{overflow:hidden}
+.job_intro .job_intro_info{overflow:hidden;white-space: pre-line;word-wrap: break-word; margin-top: -20px;}
+.job_intro .a_des{margin-top:10px}
+.job_intro dl{line-height:36px}
+.job_intro dt{font-weight:700;color:#666}
+.company_intro{background:#fff}
+.company_intro .company_service{line-height:36px;overflow:hidden;white-space: pre-line;word-wrap: break-word;margin-top: -20px;}
+.company_intro .compny_tag{padding:20px 0 10px 0;color:#999}
+.company_intro .job_line{padding:0 10px}
+.company_intro .more{padding-top:20px;padding-bottom:10px}
+
+.company_imgs{position:relative;width:600px;height:180px;padding:30px 35px;margin:10px auto}
+.arrow-left{position:absolute;left:0;top:50%;margin-top:-16px;width:32px;height:32px;cursor:pointer}
+.arrow-left.un{background-position:left top}
+.arrow-right{position:absolute;right:0;top:50%;margin-top:-16px;width:32px;height:32px;cursor:pointer}
+.arrow-right.un{background-position:right top;}
+.imgSwipe-container{width:575px;height:180px;margin:0 auto;overflow:hidden}
+.imgSwipe-wrapper{width:1800px}
+.imgSwipe-slide{margin-right:10px;float:left;width:185px;height:180px;line-height:180px;font-size:60px;text-align:center}
+.imgSwipe-slide .img-item{width:185px;height:180px;cursor:pointer}
+.imgSwipe-slide .img-item img{width:185px;height:150px}
+
+.job-detail-r{float:right;width:280px}
+.job-company{background:#FFF;position:relative}
+.company-logo img{display:block;margin:10px auto;width:164px;height:100px}
+.job-company h4 a{color:#0168b7;line-height:38px;white-space:nowrap;text-overflow:ellipsis;width:100%;overflow:hidden;display:block}
+.job-company table{line-height:30px;word-break:break-all}
+.job-company table .e1{display:block;color:#999;width:70px;vertical-align:top}
+.job-company table a{color:#0168b7}
+.mapwrap{position:relative}
+.mapwrap .samll-map{width:100%;height:250px}
+.mapwrap .big-map-btn,.mapwrap .opacity-bg{position:absolute;right:0;bottom:0;width:66px;height:20px;line-height:20px;text-align:center}
+.mapwrap .opacity-bg{background:#000;opacity:.4}
+.mapwrap .big-map-btn{color:#fff}
+.mapwrap .bigmap{width:100%;height:250px}
+.sao-img{margin-top:15px;font-size:12px;text-align:center;background:#FFF}
+.sao-img p{line-height:32px}
+.sao-img img{display:block;margin:0 auto;width:170px;height:170px}

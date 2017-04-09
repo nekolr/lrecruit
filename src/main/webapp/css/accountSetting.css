@@ -1,0 +1,139 @@
+.Wouter {
+    font: 14px/24px Microsoft YaHei, Helvetica, Tahoma;
+    width: 769px;
+    height: 636px;
+}
+
+.Wouter .title {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-size: 17px;
+    color: #666666;
+    text-indent: 35px;
+    line-height: 40px;
+}
+
+.Wouter .settingArea {
+    width: 100%;
+    /*max-height: 1212px;*/
+    height: 274px;
+    background: #fff;
+
+}
+
+.Wouter .settingArea .settingTop {
+    width: 100%;
+    height: 273px;
+    position: relative;
+
+    border-bottom: dashed 1px #eee;
+}
+
+.Wouter .settingArea > div > div {
+    height: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+.Wouter .settingArea .settingTop .mail {
+    top: 25px;
+}
+
+.Wouter .settingArea .settingTop .phone {
+    top: 95px;
+
+}
+
+.Wouter .settingArea .settingTop .pwd {
+    top: 165px;
+}
+
+.Wouter .settingArea > div .logo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 107px;
+}
+
+.Wouter .settingArea .settingTop .mail .logo {
+    background: url("../images/mailIcon.png") center no-repeat;
+
+}
+
+.Wouter .settingArea .settingTop .phone .logo {
+    background: url("../images/phoneIcon.png") center no-repeat;
+
+}
+
+.Wouter .settingArea .settingTop .pwd .logo {
+    background: url("../images/pwdIcon.png") center no-repeat;
+
+}
+
+.Wouter .Num {
+    height: 100%;
+    line-height: 70px;
+    width: 360px;
+    position: absolute;
+    left: 165px;
+    text-align: left;
+    color: #666666;
+}
+
+.Wouter .settingArea .operation {
+    /*line-height: 70px;*/
+    display: inline ;
+    text-align: left;
+    position: absolute;
+    left: 540px;
+    font-size: 14px;
+    text-decoration: none;
+    top: 35%;
+    color:#0068b7;
+}
+
+.Wouter .settingArea .pwd .operation {
+    left: 165px;
+}
+
+.Wouter .settingArea .operation:hover {
+    text-decoration: underline;
+}
+
+.Wouter .bottomTitle {
+    line-height: 70px;
+    font-size: 16px;
+    margin-left: 45px;
+}
+
+.Wouter .settingArea .settingBottom {
+    position: relative;
+
+}
+
+.Wouter .settingArea .settingBottom .wechat {
+    top: 65px;
+}
+
+.Wouter .settingArea .settingBottom .qq {
+    top: 135px;
+}
+
+.Wouter .settingArea .settingBottom .weibo {
+    top: 205px;
+}
+.Wouter .settingArea .settingBottom .wechat .logo {
+    background: url("../images/wechat.png") center no-repeat;
+}
+
+.Wouter .settingArea .settingBottom .qq .logo {
+    background: url("../images/qq.png") center no-repeat;
+}
+
+.Wouter .settingArea .settingBottom .weibo .logo {
+    background: url("../images/weibo.png") center no-repeat;
+}
+

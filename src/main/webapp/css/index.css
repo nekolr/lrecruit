@@ -1,0 +1,70 @@
+.content{width:1024px;margin:0 auto;}
+.content .hotTat{background:url(../images/index-icon.png) no-repeat -70px -4px #eee;top:379px;right:-23px;}
+.index-icon{background:url(../images/index-icon.png) no-repeat}
+
+/*sideBar侧边栏*/
+.sideBar{width:240px;position:relative;left:0;top:0;z-index:2;height:760px;}
+.sideBar .sideTab{height:46px;line-height:46px;text-align:center;font-size:18px;}
+/*.sideTab span{display:inline-block;width:120px;background:#f8f8f8;border-top:1px solid #f8f8f8;cursor:pointer}
+.sideTab .sClick{background:#fff;color:#f85659;border-top:#f85659 1px solid;}*/
+.sideBar .sideNav{position:relative;background:#fff;}
+.sideBar .sideNav .sideBox,.dif-sideBox{position:relative;z-index:2;height:110px;border-bottom:1px solid #eee;}
+.sideBar .sideNav .sideBox a,.dif-sideBox a{color:#666}
+.sideBar .sideNav .sideBox a:hover,.dif-sideBox a:hover{color:#f85659}
+.sideMen{max-height:86px;padding:8px 13px 12px;position:relative;overflow:hidden;z-index:5;display:block;border:2px solid #fff; border-right:none;}
+
+/*side遮罩*/
+.sideMain{width:582px;padding:10px 22px 14px;border:2px solid #ddd;background:#fff;position:absolute;left:240px;top:0px;z-index:3}
+.sideBottom{bottom:0;top:initial}
+.sideHov{height:86px;border:2px solid #ddd;border-right:none;background: #fff;padding:8px 13px 12px;width:214px;}
+
+.sideMain .tit,.sideMen .tit{height:34px;line-height:34px;font-size:16px;width:100%;padding-left:3px}
+.sideMain .tit a,.sideMen .tit a{padding:0;background:none;margin:0}
+.sideMen .tit{padding-left:5px;}
+.sideMen a,.sideMain a{line-height:30px;float:left;white-space:nowrap; }
+.sideMen a{padding-right:12px;margin:0 5px;}
+.sideMain .alink{overflow:hidden;margin:0 0 10px -8px;border-bottom:1px dashed #e9e9e9;padding-bottom:14px}
+.sideMain a{line-height:14px;padding:0 13px;background:url(../images/line-icon.png) no-repeat 0 8px;margin-left:-1px;line-height:26px;}
+.sideMain .alinkNor{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.sideMain .aLast{backgrund:none}
+.sideTit{height:44px;line-height:44px;padding-left:17px;font-size:16px;}
+.sideTit a{color:#666}
+.sideMen i{position:absolute;height:16px;width:8px;background-position: -46px -10px;top:58px;left:218px;}
+
+/*右边*/
+.column{width:770px;position:absolute;right:0;top:0;overflow:hidden;height:760px;}
+
+/*轮播 banner*/
+.colBanner{height:260px;overflow:hidden;}
+.listBan{width:616px;height:260px;overflow:hidden;position:relative;}
+.listBan ul{position:absolute;left:0px;top:0px;z-index:1;}
+.listBan ul li{height:260px;width:616px;}
+.listTab{width:146px;}
+.listTab ul li{width:142px;height:56px;margin-bottom:6px;opacity:0.6;filter:Alpha(opacity=40);border:2px solid #f8f8f8;}
+.listTab ul .liHov{border:2px solid #b2bfd4;opacity:1;filter:Alpha(opacity=100);margin-bottom:10px}
+.listTab ul .liNorMar{margin:8px 0 0 0}
+.listTab ul li img{height:56px;width:142px}
+
+/*热招*/
+.hotEnprise{position:relative;overflow:hidden;}
+
+.hotEnprise .tit{height:60px;line-height:64px;color:#777;font-weight:bold;font-size:20px;text-indent:6px;}
+.bigList{height:168px;border-top:1px solid #eee}
+.bigList li{float:left;width:191px;height:154px;padding-top:14px;text-align:center;border-right:1px solid #eee;background:#fff;position:relative;}
+.bigList li img{display:block;height:80px;width:140px;margin:0 auto;}
+.bigList li em{line-height:20px;display:block;width:78%;padding:9px 0;margin:0 auto;}
+.bigList .liLast{border:0;width:194px}
+
+/*.smaList{height:212px;border-top:1px solid #eee;background:#fff;position:relative}
+.smaList li{width:153px;height:50px;float:left;padding:10px 0;border-right:1px solid #eee;border-bottom:1px solid #eee;text-align:center;position:relative}
+.smaList li img{width:106px;height:50px;}
+.smaList .noBor,.sch-bigList .noBor,.sch-smaList .noBor{border-right:none}*/
+
+/*遮罩 mask*/
+.divMask{background:rgb(95,170,208);filter:alpha(opacity=90);background:rgba(95,170,208,.9);color:#fff;top:0;left:0;position:absolute;height:100%;width:100%;cursor:pointer;}
+.divMask .dmTxt{padding:10px 13px;line-height:20px;font-size:12px;height:90px;overflow:hidden;text-align:left}
+.divMask .dmTxt span{font-size:16px;display:block;margin-bottom:4px;}
+.divMask .dmTxt span a{font-size:16px;white-space:nowrap; text-overflow:ellipsis;overflow:hidden;display:block;}
+.divMask .dmA{border:1px solid #fff;width:166px;height:32px;line-height:32px;text-align:center;font-size:14px;display:block;margin:15px auto 12px;}
+.divMask a{display:block;color:#fff;overflow:hidden;font-size:12px;width:100%;color:#fff;}
+/*.smaList .divMask,.sch-smaList .divMask{line-height:70px;text-align:center;}*/
