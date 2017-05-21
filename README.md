@@ -5,9 +5,11 @@
 
 一开始用xml配置，导师不同意：学生作品要创新！    
 
-于是乎，使用Java配置类   
+于是乎，使用Java配置类   
+什么？丑拒？！   
+![image](http://ogtt1ia7v.bkt.clouddn.com/20170521172243.png)   
 
----      
+---      
 使用AspectJ进行aop的简单登录日志记录   
 使用XMLHttpRequest Level2 ajax上传图片       
 简单使用了Sea.js加载部分js文件      
