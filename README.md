@@ -1,17 +1,10 @@
-# lrecruit    
-使用SSM框架，除mybatis的sql映射文件外，无xml文件    
-后台使用mybatis的分页插件PageHelper，前台使用js分页插件layPage    
-使用AspectJ进行aop的简单登录日志记录   
-前台使用XMLHttpRequest Level2 ajax的方式上传图片，后台使用Servlet 3.0以上的新方法进行二进制文件的接收(getPart)    
-简单使用了Sea.js加载部分js文件   
-使用Spring整合Junit的方式进行测试，测试项目中的DAO层、Service层和Controller层    
-使用Spirng封装的JavaMail进行邮件的发送      
+# lrecruit
+这个项目是一个求职招聘网站   
 
-1.独立一个tomcat来使用 D:\apache-tomcat-8.0.38
+本人软件工程专业，在毕业之前要交一份毕业设计，由于本人只会Java，所以打算使用古老的SSH做一个管理系统（蛤），但是导师说这个都烂大街了，孬好用SSM做一个也比这个强啊，于是乎，就用SSM框架揉了一个求职招聘网站^_^   
 
-2.修改了conf下的server.xml文件(其实只要修改eclipse中的Servers中的server.xml文件即可)加入以下内容：
-```
-<Context path="LRecruit/file" docBase="D:\apache-tomcat-8.0.38\upload\file"></Context>
-<Context path="LRecruit/image" docBase="D:\apache-tomcat-8.0.38\upload\image"></Context>
-```
-这样就能够将上传的文件独立出来，避免每次部署清空文件的情况
+一开始用xml配置，导师不同意：学生作品要创新！    
+
+于是乎，使用Java配置类   
+
+---      
