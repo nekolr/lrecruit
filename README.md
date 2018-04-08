@@ -5,8 +5,6 @@
 
 一开始用xml配置，后来改用了Java配置。 
 
-![image](http://ogtt1ia7v.bkt.clouddn.com/20170521172243.png)   
-
 ---
 - 使用AspectJ进行aop的简单登录日志记录   
 - 使用XMLHttpRequest Level2 ajax上传图片       
